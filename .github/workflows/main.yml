@@ -1,0 +1,21 @@
+name: Latest blog post workflow
+on:
+  repository_dispatch:
+    types: [contentful.deploy]
+jobs:
+  use-action:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Fetch API Data 📦
+      uses: JamesIves/fetch-api-data-action@releases/v1
+      with:
+          ENDPOINT: https://cdn.contentful.com/spaces/oveaw8c9vpyp/environments/sandbox/content_types?access_token=nlq_wRCpSnMnHcfAisYgkwwH_999NjGLDfYvL4Uw7Hc
+          SAVE_LOCATION: contentful/data.json
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        branch: main
+        message: 'contentful: autopublish ${date}'
