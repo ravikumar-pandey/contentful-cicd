@@ -1,4 +1,4 @@
-name: Latest blog post workflow
+name: Contentful CICD workflow
 on:
   repository_dispatch:
     types: [contentful.deploy]
