@@ -18,6 +18,7 @@ jobs:
           
 workflows:
   version: 2.1
+  gitconnect:
     jobs:
       - build:
           filters:
