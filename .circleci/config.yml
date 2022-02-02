@@ -12,8 +12,8 @@ jobs:
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
-        github_token: ${{ secrets.ACCESS_TOKEN }}
-        branch: main
+        github_token: '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'
+        branch: circleci-project-setup
         message: 'contentful: autopublish ${date}'
           
 workflows:
