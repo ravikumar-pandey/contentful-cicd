@@ -7,7 +7,7 @@ jobs:
     - name: Fetch API Data 📦
       uses: JamesIves/fetch-api-data-action@releases/v1
       with:
-          ENDPOINT: https://cdn.contentful.com/spaces/5zdu8tl44dyz/environments/prod/content_types?access_token=8K4vUmyqa6GAImzJ5Vyz7QZI6KUYtIQxbrYz5ICTrGg
+          ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
           SAVE_LOCATION: contentful/data.json
     - name: Commit & Push changes
       uses: actions-js/push@master
