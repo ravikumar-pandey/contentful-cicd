@@ -9,6 +9,8 @@ jobs:
       with:
           ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
           SAVE_LOCATION: contentful/data.json
+  commit:
+    steps:
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
@@ -24,6 +26,13 @@ workflows:
           filters:
             tags:
               only: /.*/
+            branches:
+              only:
+                - circleci-project-setup
+       - commit:
+          requires:
+            - build
+          filters:
             branches:
               only:
                 - circleci-project-setup
