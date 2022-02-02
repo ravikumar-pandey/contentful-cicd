@@ -17,7 +17,7 @@ jobs:
         message: 'contentful: autopublish ${date}'
           
 workflows:
-  version: 2
+  version: 2.1
     jobs:
       - build:
           filters:
@@ -25,4 +25,4 @@ workflows:
               only: /.*/
             branches:
               only:
-                - develop
+                - circleci-project-setup
