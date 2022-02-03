@@ -1,13 +1,6 @@
-version: 2.1
-defaults: &defaults
-  working_directory: ~/repo
-  docker:
-      - image: circleci/node:14.17.5
-  resource_class: xlarge
+version: 1
 
 jobs:
-  build:
-    <<: *defaults
     steps:
     - uses: actions/checkout@v2
     - name: Fetch API Data 📦
@@ -15,18 +8,9 @@ jobs:
       with:
           ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
           SAVE_LOCATION: contentful/data.json
-  commit:
-    <<: *defaults
-    steps:
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: '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'
-        branch: circleci-project-setup
-        message: 'contentful: autopublish ${date}'
           
 workflows:
-  version: 2.1
+  version: 1
   gitconnect:
     jobs:
       - build:
@@ -36,11 +20,3 @@ workflows:
             branches:
               only:
                 - circleci-project-setup
-      - commit:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - circleci-project-setup
-
