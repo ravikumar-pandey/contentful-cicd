@@ -29,7 +29,7 @@ workflows:
             branches:
               only:
                 - circleci-project-setup
-       - commit:
+      - commit:
           requires:
             - build
           filters:
