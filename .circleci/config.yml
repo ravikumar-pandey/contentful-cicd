@@ -1,7 +1,13 @@
 version: 2.1
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+      - image: circleci/node:14.17.5
+  resource_class: xlarge
 
 jobs:
   build:
+    <<: *defaults
     steps:
     - uses: actions/checkout@v2
     - name: Fetch API Data 📦
@@ -10,6 +16,7 @@ jobs:
           ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
           SAVE_LOCATION: contentful/data.json
   commit:
+    <<: *defaults
     steps:
     - name: Commit & Push changes
       uses: actions-js/push@master
