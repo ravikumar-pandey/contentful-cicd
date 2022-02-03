@@ -18,6 +18,7 @@ jobs:
         message: 'contentful: autopublish ${date}'
 
 workflows:
+  version: 1
   gitconnect:
     jobs:
       - build:
