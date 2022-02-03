@@ -1,6 +1,7 @@
 version: 1
 
 jobs:
+   build:
     steps:
     - uses: actions/checkout@v2
     - name: Fetch API Data 📦
