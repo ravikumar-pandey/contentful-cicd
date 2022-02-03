@@ -5,7 +5,7 @@ jobs:
     executor: my-ubuntu-exec
     steps:
       - uses: actions/checkout@v2
-	  - name: Fetch API Data 📦
+      - name: Fetch API Data 📦
       uses: JamesIves/fetch-api-data-action@v2.1.0
       with:
           ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
