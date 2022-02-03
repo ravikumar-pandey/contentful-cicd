@@ -1,26 +1,18 @@
-version: 1.1
+version: 2.1
 
 jobs:
   build:
-  use-action:
-    runs-on: ubuntu-latest
-
+    executor: my-ubuntu-exec
     steps:
-    - uses: actions/checkout@v2
-    - name: Fetch API Data 📦
-      uses: JamesIves/fetch-api-data-action@releases/v1
+      - uses: actions/checkout@v2
+	  - name: Fetch API Data 📦
+      uses: JamesIves/fetch-api-data-action@v2.1.0
       with:
-          ENDPOINT: https://cdn.contentful.com/spaces/5zdu8tl44dyz/environments/prod/content_types?access_token=8K4vUmyqa6GAImzJ5Vyz7QZI6KUYtIQxbrYz5ICTrGg
+          ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
           SAVE_LOCATION: contentful/data.json
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.ACCESS_TOKEN }}
-        branch: main
-        message: 'contentful: autopublish ${date}'
 
 workflows:
-  version: 1
-  gitconnect:
+  version: 2
+  gitconnet:
     jobs:
       - build
