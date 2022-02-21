@@ -1,18 +1,11 @@
 version: 2.1
-
 jobs:
   build:
-    executor: my-ubuntu-exec
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
-      - uses: actions/checkout@v2
-      - name: Fetch API Data 📦
-        uses: JamesIves/fetch-api-data-action@v2.1.0
-        with:
-          ENDPOINT: https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
-          SAVE_LOCATION: contentful/data.json
-
-workflows:
-  version: 2
-  gitconnet:
-    jobs:
-      - build
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
