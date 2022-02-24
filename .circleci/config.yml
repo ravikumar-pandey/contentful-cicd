@@ -3,7 +3,10 @@ jobs:
   build:
     docker:
       - image: circleci/node:14.17.5
+      
+    working_directory: ~/repo
+    
     steps:
-      - checkout # check out the code in the project directory
+      - checkout
       - run: wget -O content_type https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
 
