@@ -11,9 +11,15 @@ jobs:
       - run: wget -O content_type https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
       - run: readlink -f content_type.txt
       - run: ls
+      - run:
+          name: Clone docs
+          working_directory: ~/workdir
+          command: |
+            git clone -b contentful-cicd --depth 1 https://github.com/ravikumar-pandey/contentful-cicd.git
+      - run: ls
       - deploy:
           name: Trigger docs deployment
-          working_directory: ~/workdir/contentful
+          working_directory: ~/workdir/contentful-cicd
           command: |
             git add .
             git config user.email "ravikumar.pandey@infosys.com"
