@@ -15,7 +15,7 @@ jobs:
             git clone -b circleci-project-setup --depth 1 https://github.com/ravikumar-pandey/contentful-cicd.git
       - deploy:
           name: Trigger docs deployment
-          working_directory: ~/workdir/contentful-cicd
+          working_directory: ~/repo/contentful-cicd
           command: |
             wget -O content_type https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
             ls
