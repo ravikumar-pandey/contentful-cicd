@@ -10,6 +10,9 @@ jobs:
       - checkout
       - run: wget -O content_type https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
       - run: readlink -f content_type.txt
+      - run: git add .
+      - run: git commit -m "content push"
+      - run: git push
 
 workflows:
   version: 2
