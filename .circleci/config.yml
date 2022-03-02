@@ -32,7 +32,7 @@ workflows:
       - build:
           filters:
             tags:
-              ignore: /.*/
+              only: /^v.*/
             branches:
               only:
                 - circleci-project-setup
