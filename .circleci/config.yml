@@ -18,7 +18,7 @@ jobs:
             git config user.name "Deployment Bot"
             git commit --allow-empty -m "Trigger deployment"
             # Push quietly to prevent showing the token in log
-            git push -q https://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@github.com/ravikumar-pandey/contentful-cicd.git main
+            git push
 
 workflows:
   version: 2
