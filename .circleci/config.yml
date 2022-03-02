@@ -15,8 +15,9 @@ jobs:
           name: Trigger docs deployment
           working_directory: ~/workdir/contentful
           command: |
+            git add .
             git config user.email "ravikumar.pandey@infosys.com"
-            git config user.name "Deployment Bot"
+            git config user.name "ravikumar-pandey"
             git commit --allow-empty -m "Trigger deployment"
             # Push quietly to prevent showing the token in log
             git push
