@@ -10,9 +10,16 @@ jobs:
       - checkout
       - run: wget -O content_type https://cdn.contentful.com/spaces/bxxzjfpinfqw/environments/dev/content_types?access_token=i9NVv2CZw-ybTGentOo1rEqGR-OO2Y1bXbptT6383kw
       - run: readlink -f content_type.txt
-      - run: git add .
-      - run: git commit -m "content push"
-      - run: git push
+      - deploy:
+          name: Trigger docs deployment
+          working_directory: ~/workdir/contentful
+          command: |
+            git config credential.helper 'cache --timeout=120'
+            git config user.email "ravikumar.pandey@infosys.com"
+            git config user.name "Deployment Bot"
+            git commit --allow-empty -m "Trigger deployment"
+            # Push quietly to prevent showing the token in log
+            git push -q https://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@github.com/ravikumar-pandey/contentful.git circleci-project-setup
 
 workflows:
   version: 2
