@@ -1,0 +1,4209 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 36,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationSustainability",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:39.487Z",
+        "updatedAt": "2022-02-23T12:18:21.668Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 73
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationSustainability",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "primaryPillar",
+          "name": "Primary pillar",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryPillar",
+          "name": "Secondary pillar",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Pillar: Net Zero & Energy",
+                  "Pillar: Resilience & Adaptation",
+                  "Pillar: Circular Economies",
+                  "Pillar: Ecosystems & Resources",
+                  "Pillar: Social Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "knowledgeLevel",
+          "name": "Knowledge level",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Lever: Governance",
+                  "Lever: Finance",
+                  "Lever: Innovation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "sustainableDevelopmentGoals",
+          "name": "Sustainable Development Goals",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "GOAL 1: No Poverty",
+                  "GOAL 2: Zero Hunger",
+                  "GOAL 3: Good Health and Well-being",
+                  "GOAL 4: Quality Education",
+                  "GOAL 5: Gender Equality",
+                  "GOAL 6: Clean Water and Sanitation",
+                  "GOAL 7: Affordable and Clean Energy",
+                  "GOAL 8: Decent Work and Economic Growth",
+                  "GOAL 9: Industry, Innovation and Infrastructure",
+                  "GOAL 10: Reduced Inequality",
+                  "GOAL 11: Sustainable Cities and Communities",
+                  "GOAL 12: Responsible Consumption and Production",
+                  "GOAL 13: Climate Action",
+                  "GOAL 14: Life Below Water",
+                  "GOAL 15: Life on Land",
+                  "GOAL 16: Peace and Justice Strong Institutions",
+                  "GOAL 17: Partnerships to achieve the Goal"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "campaignSlug",
+          "name": "Campaign Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationPage",
+        "type": "ContentType",
+        "createdAt": "2021-10-04T04:56:22.904Z",
+        "updatedAt": "2022-02-23T12:18:21.614Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 207
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationPage",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "campaignSlug",
+          "name": "Campaign Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteDictionary",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:27.455Z",
+        "updatedAt": "2022-02-22T18:13:28.364Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 46
+      },
+      "displayField": "name",
+      "name": "Site: Dictionary",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "group",
+          "name": "Group",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "valueList",
+          "name": "Value List",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addEvent",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:46.233Z",
+        "updatedAt": "2022-02-22T11:24:27.450Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 25
+      },
+      "displayField": "internalId",
+      "name": "Add: Event",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteClassificationSustainability"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alternateImage",
+          "name": "Alternate Card Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sponsors",
+          "name": "Sponsors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addSponsor"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "region",
+          "name": "Region",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startDatetime",
+          "name": "Start Date/Time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endDatetime",
+          "name": "End Date/Time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "externalUrl",
+          "name": "External Url",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "featuredSpeakers",
+          "name": "Featured speakers",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eventId",
+          "name": "External Event Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentImage",
+                  "componentInfographic",
+                  "componentVideo"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "downloadables",
+          "name": "Downloadables",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentDownloadable"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "displayCardImage",
+          "name": "Display Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteTenant",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:12.323Z",
+        "updatedAt": "2022-02-22T06:26:38.523Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "internalId",
+      "name": "Site: Initiative",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: World Ocean",
+                  "Initiative: React"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "pageTemplateDefault",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:35:33.469Z",
+        "updatedAt": "2022-02-22T06:26:07.109Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "name",
+      "name": "Template: Default",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: World Ocean",
+                  "Initiative: React"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "main",
+          "name": "Main",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addEvent",
+                "addOrganisation",
+                "addPage",
+                "addPerson",
+                "addPublication",
+                "addSponsor"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sections",
+          "name": "Sections",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "layoutSection"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentCta",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:10.949Z",
+        "updatedAt": "2022-02-14T13:11:47.931Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Component: CTA",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkLabel",
+          "name": "Link label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkText",
+          "name": "Link text",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pageLink",
+          "name": "Page link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "urlLink",
+          "name": "URL link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showInFooter",
+          "name": "Show in Footer",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addPage",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:17.829Z",
+        "updatedAt": "2022-02-08T04:50:38.798Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Add: Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteClassificationPage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "authorship",
+          "name": "Authorship",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards",
+                "componentImage",
+                "componentVideo",
+                "layoutSection"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroIcon",
+          "name": "Hero icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsors",
+          "name": "Sponsors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addSponsor"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "paragraphs",
+          "name": "Paragraphs",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockParagraph"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "displayPartnerLogo",
+          "name": "Display Partner Logo",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteConfig",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:40.870Z",
+        "updatedAt": "2022-02-04T11:11:50.527Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "internalId",
+      "name": "Site: Config",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "siteTitle",
+          "name": "Site title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "averageWords",
+          "name": "Average words",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "header",
+          "name": "Header",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteHeader"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteFooter"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "labels",
+          "name": "Labels",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteReference"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "themeRef",
+          "name": "ThemeRef",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addPublication",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:19.335Z",
+        "updatedAt": "2022-01-31T10:08:48.973Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13
+      },
+      "displayField": "internalId",
+      "name": "Add: Publication",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteBluePeaceClassification",
+                "siteClassificationSustainability"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "authorship",
+          "name": "Authorship",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "synopsis",
+          "name": "Synopsis",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alternateImage",
+          "name": "Alternate Card Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sponsors",
+          "name": "Sponsors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addSponsor"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "publishedDate",
+          "name": "Published date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "wordCount",
+          "name": "Word count",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "paragraphs",
+          "name": "Paragraphs",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockParagraph",
+                  "blockStatement"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "references",
+          "name": "References",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockParagraph"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "externalUrl",
+          "name": "External Url",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "downloadables",
+          "name": "Downloadables",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentDownloadable"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "displayCardImage",
+          "name": "Display Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "displaySponsorLogo",
+          "name": "Display Sponsor Logo",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteBluePeaceClassification",
+        "type": "ContentType",
+        "createdAt": "2022-01-26T17:39:19.784Z",
+        "updatedAt": "2022-01-26T17:41:20.508Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "internalId",
+      "name": "Site: BluePeaceClassification",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: BluePeace"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.158Z",
+        "updatedAt": "2022-01-25T04:39:26.941Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "name",
+      "name": "Compose: Page",
+      "description": "Represents a web page in Compose. DO NOT DELETE",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Page title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seo",
+          "name": "SEO metadata",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "seo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "templateArticle",
+                "pageTemplateArticle",
+                "pageTemplateLandingPage",
+                "pageArticleWithoutPublication",
+                "pageWorldTunaDay",
+                "pageTemplePublication",
+                "pageTemplateDefault",
+                "pageGetstarted",
+                "pageTemplateDefault"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentSearch",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:00.244Z",
+        "updatedAt": "2022-01-19T06:46:28.584Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10
+      },
+      "displayField": "internalId",
+      "name": "Component: Search",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "searchQuery",
+          "name": "Search query",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "searchLimit",
+          "name": "Search limit",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywordSearch",
+          "name": "Keyword search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywordValue",
+          "name": "Keyword value",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tagSearch",
+          "name": "Tag search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sortOption",
+          "name": "Sort option",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "filterOption",
+          "name": "Filter option",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "filterValues",
+          "name": "Filter values",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "SearchSort: Latest",
+                  "SearchSort: Popular",
+                  "SearchSort: Level",
+                  "SearchSort: A-Z"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "pageLink",
+          "name": "Page link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "queryContentType",
+          "name": "Query Content type",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Add Publication",
+                  "Add Events"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockParagraph",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:48.492Z",
+        "updatedAt": "2022-01-06T09:28:41.661Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "internalName",
+      "name": "Block: Paragraph",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "titleSlug",
+          "name": "Title Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publicationIndex",
+          "name": "Publication index",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "visibleLines",
+          "name": "Visible lines",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "paragraph",
+          "name": "Paragraph",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentInfographic",
+                "componentPodcast",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mediaFullWidth",
+          "name": "Media full width",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockQuote",
+          "name": "Block quote",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockQuoteMedia",
+          "name": "Block quote media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson",
+                "componentImage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockCards",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:55.705Z",
+        "updatedAt": "2021-12-22T09:07:13.502Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9
+      },
+      "displayField": "internalId",
+      "name": "Block: Cards",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cards",
+          "name": "Cards",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentCard"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "showCardImage",
+          "name": "Show Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slideTransition",
+          "name": "Slide transition",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardColumns",
+          "name": "Card columns",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardRows",
+          "name": "Card rows",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentSearch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cardsLimit",
+          "name": "Cards Limit",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentPodcast",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:49.888Z",
+        "updatedAt": "2021-12-21T06:41:19.973Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "internalId",
+      "name": "Component: Podcast",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "episode",
+          "name": "Episode",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "snippet",
+          "name": "Snippet",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration Time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockStatement",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:23.776Z",
+        "updatedAt": "2021-12-14T14:09:26.580Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Block: Statement",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "titleSlug",
+          "name": "Title Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta",
+                "componentDownloadable"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "imagePosition",
+          "name": "Image position",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteMenu",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:15.503Z",
+        "updatedAt": "2021-12-14T10:15:33.710Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Site: Menu",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "menuText",
+          "name": "Menu text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "menuLink",
+          "name": "Menu link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menuItems",
+          "name": "Menu items",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockCtas",
+                  "siteMenu"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addSponsor",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:43.966Z",
+        "updatedAt": "2021-12-08T09:33:23.749Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "sponsorLabel",
+      "name": "Add: Sponsor",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": true,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": true,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sponsorLabel",
+          "name": "Sponsor label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addPerson",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:43.119Z",
+        "updatedAt": "2021-12-08T09:32:37.251Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Add: Person",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Profile photo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "description",
+          "name": "Bio",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Job title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact",
+          "name": "Contact",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addOrganisation",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:41.767Z",
+        "updatedAt": "2021-12-08T09:31:32.970Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Add: Organisation",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Company",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "brands",
+          "name": "Brands",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addOrganisation"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "websiteUrl",
+          "name": "Website URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentDownloadable",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:04.935Z",
+        "updatedAt": "2021-12-03T11:09:18.038Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Component: Downloadable",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "file",
+          "name": "File",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "linkText",
+          "name": "Link Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentCard",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:36.271Z",
+        "updatedAt": "2021-11-29T07:47:44.812Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Component: Card",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentInfographic",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerPost",
+          "name": "Partner post",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "primary",
+          "name": "Primary",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentImage",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:01.161Z",
+        "updatedAt": "2021-11-24T09:07:29.674Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Component: Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSeoSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "mobileImage",
+          "name": "Mobile Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "altText",
+          "name": "Alt text",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageFocus",
+          "name": "Image focus",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteHeader",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:34.853Z",
+        "updatedAt": "2021-09-29T07:47:34.853Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Site: Header",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLogo",
+          "name": "Partner logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu",
+          "name": "Menu",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteMenu"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "userAccount",
+          "name": "User account",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "seo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.266Z",
+        "updatedAt": "2021-09-29T07:47:33.390Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "name",
+      "name": "Compose: SEO",
+      "description": "SEO Metadata for web pages in Compose. DO NOT DELETE",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "SEO title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywords",
+          "name": "Keywords",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "no_index",
+          "name": "Hide page from search engines (noindex)",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "no_follow",
+          "name": "Exclude links from search rankings? (nofollow)",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "layoutSection",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:32.000Z",
+        "updatedAt": "2021-09-29T07:47:32.000Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Layout: Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "alternativeBackgroundColour",
+          "name": "Alternative background colour",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "component",
+          "name": "Component",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockForm",
+                  "blockParagraph",
+                  "blockSpotlight",
+                  "blockStatement"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteReference",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:28.820Z",
+        "updatedAt": "2021-09-29T07:47:28.820Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalName",
+      "name": "Site: Reference",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "dictionary",
+          "name": "Dictionary",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteDictionary"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteBanner",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:22.370Z",
+        "updatedAt": "2021-09-29T07:47:22.370Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Site: Banner",
+      "description": "",
+      "fields": [
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startDatetime",
+          "name": "Start date/time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endDatetime",
+          "name": "End date/time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bannerPosition",
+          "name": "Banner position",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteGtm",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:20.731Z",
+        "updatedAt": "2021-09-29T07:47:20.731Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Site: GTM",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "entities",
+          "name": "Entities",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Reading Time"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "gtmTag",
+          "name": "GTM tag",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockForm",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:05.827Z",
+        "updatedAt": "2021-09-29T07:47:05.827Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "title",
+      "name": "Block: Form",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "htmlForm",
+          "name": "HTML form (No Comment Tags Allowed)",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteFooter",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:58.571Z",
+        "updatedAt": "2021-09-29T07:46:58.571Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Site: Footer",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLogo",
+          "name": "Partner logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "siteLinks",
+          "name": "Site links",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCtas"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "otherLinks",
+          "name": "Other links",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "socialMediaLinks",
+          "name": "Social media links",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "statutory",
+          "name": "Statutory",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentInfographic",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:57.116Z",
+        "updatedAt": "2021-09-29T07:46:57.116Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Component: Infographic",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infographicUrl",
+          "name": "Infographic URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockCtas",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:54.295Z",
+        "updatedAt": "2021-09-29T07:46:54.295Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Block: CTAs",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentCta"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "linksCount",
+          "name": "Links count",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockSpotlight",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:51.509Z",
+        "updatedAt": "2021-09-29T07:46:51.509Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Block: Spotlight",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "featured",
+          "name": "Featured",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tabView",
+          "name": "Tab view",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentVideo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:38.551Z",
+        "updatedAt": "2021-09-29T07:46:38.551Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "displayField": "internalId",
+      "name": "Component: Video",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "youtubeId",
+          "name": "YouTube ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "brightcoveId",
+          "name": "BrightCove ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "videoUrl",
+          "name": "Video URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thumbnail",
+          "name": "Thumbnail",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ]
+}
