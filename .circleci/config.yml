@@ -13,6 +13,9 @@ jobs:
           working_directory: ~/repo
           command: |
             git clone -b circleci-project-setup --depth 1 https://github.com/ravikumar-pandey/contentful-cicd.git
+      - fetch:
+          name: Fetch Content Types from Contentful
+          working_directory: ~/workdir/contentful-cicd
       - run: ls
 
 
