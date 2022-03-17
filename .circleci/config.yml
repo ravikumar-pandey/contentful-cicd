@@ -9,11 +9,11 @@ jobs:
     steps:
       - checkout
       
-#       - run:
-#           name: Clone docs
-#           working_directory: ~/repo
-#           command: |
-#             git clone -b circleci-project-setup --depth 1 https://github.com/ravikumar-pandey/contentful-cicd.git
+       - run:
+           name: Clone docs
+           working_directory: ~/repo
+           command: |
+             git clone -b main --depth 1 https://github.com/ravikumar-pandey/contentful-cicd.git
 
       - deploy:
           name: Trigger docs deployment
