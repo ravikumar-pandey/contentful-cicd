@@ -39,4 +39,4 @@ workflows:
               only: /contentful-.*/
             branches:
               only:
-                - main
+                - circleci-project-setup
