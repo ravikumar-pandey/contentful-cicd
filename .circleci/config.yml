@@ -26,7 +26,7 @@ jobs:
             git config user.name "ravikumar-pandey"
             git commit --allow-empty -m "Trigger deployment"
             # Push quietly to prevent showing the token in log
-            git push
+            git push --set-upstream origin circleci-project-setup
 
 
 workflows:
