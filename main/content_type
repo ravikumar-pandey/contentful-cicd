@@ -18,7 +18,7 @@
         "id": "addPage",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:17.829Z",
-        "updatedAt": "2022-03-31T09:07:55.220Z",
+        "updatedAt": "2022-04-01T11:10:43.685Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,7 +26,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 19
+        "revision": 20
       },
       "displayField": "internalId",
       "name": "Add: Page",
@@ -165,15 +165,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "flagHeroSmallScreenSize",
-          "name": "Flag: Hero Small Screen Size",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         },
         {
           "id": "sponsors",
