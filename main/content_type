@@ -18,7 +18,7 @@
         "id": "siteClassificationSustainability",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:39.487Z",
-        "updatedAt": "2022-04-18T05:57:18.272Z",
+        "updatedAt": "2022-04-18T05:57:51.700Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,7 +26,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 83
+        "revision": 84
       },
       "displayField": "internalId",
       "name": "Site: ClassificationSustainability",
@@ -189,7 +189,7 @@
         "id": "siteClassificationPage",
         "type": "ContentType",
         "createdAt": "2021-10-04T04:56:22.904Z",
-        "updatedAt": "2022-04-18T05:57:18.211Z",
+        "updatedAt": "2022-04-18T05:57:51.581Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -197,7 +197,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 222
+        "revision": 223
       },
       "displayField": "internalId",
       "name": "Site: ClassificationPage",
