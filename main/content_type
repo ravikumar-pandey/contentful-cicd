@@ -15,6 +15,255 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "siteClassificationPage",
+        "type": "ContentType",
+        "createdAt": "2021-10-04T04:56:22.904Z",
+        "updatedAt": "2022-04-18T05:53:24.237Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 221
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationPage",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: World Ocean",
+                  "Initiative: React"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "campaignSlug",
+          "name": "Campaign Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationSustainability",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:39.487Z",
+        "updatedAt": "2022-04-18T05:53:24.133Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 82
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationSustainability",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "primaryPillar",
+          "name": "Primary pillar",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryPillar",
+          "name": "Secondary pillar",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Pillar: Net Zero & Energy",
+                  "Pillar: Resilience & Adaptation",
+                  "Pillar: Circular Economies",
+                  "Pillar: Ecosystems & Resources",
+                  "Pillar: Social Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "knowledgeLevel",
+          "name": "Knowledge level",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Lever: Governance",
+                  "Lever: Finance",
+                  "Lever: Innovation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "sustainableDevelopmentGoals",
+          "name": "Sustainable Development Goals",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "GOAL 1: No Poverty",
+                  "GOAL 2: Zero Hunger",
+                  "GOAL 3: Good Health and Well-being",
+                  "GOAL 4: Quality Education",
+                  "GOAL 5: Gender Equality",
+                  "GOAL 6: Clean Water and Sanitation",
+                  "GOAL 7: Affordable and Clean Energy",
+                  "GOAL 8: Decent Work and Economic Growth",
+                  "GOAL 9: Industry, Innovation and Infrastructure",
+                  "GOAL 10: Reduced Inequality",
+                  "GOAL 11: Sustainable Cities and Communities",
+                  "GOAL 12: Responsible Consumption and Production",
+                  "GOAL 13: Climate Action",
+                  "GOAL 14: Life Below Water",
+                  "GOAL 15: Life on Land",
+                  "GOAL 16: Peace and Justice Strong Institutions",
+                  "GOAL 17: Partnerships to achieve the Goal"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "campaignSlug",
+          "name": "Campaign Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": true,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "blockCards",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:55.705Z",
@@ -497,255 +746,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteClassificationPage",
-        "type": "ContentType",
-        "createdAt": "2021-10-04T04:56:22.904Z",
-        "updatedAt": "2022-03-25T04:17:05.430Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 220
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationPage",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability",
-                  "Initiative: Healthcare",
-                  "Initiative: Podiumtest",
-                  "Initiative: World Ocean",
-                  "Initiative: React"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "campaign",
-          "name": "Campaign",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "campaignSlug",
-          "name": "Campaign Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteClassificationSustainability",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:39.487Z",
-        "updatedAt": "2022-03-22T09:02:50.578Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 81
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationSustainability",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "primaryPillar",
-          "name": "Primary pillar",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "secondaryPillar",
-          "name": "Secondary pillar",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Pillar: Net Zero & Energy",
-                  "Pillar: Resilience & Adaptation",
-                  "Pillar: Circular Economies",
-                  "Pillar: Ecosystems & Resources",
-                  "Pillar: Social Sustainability"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "knowledgeLevel",
-          "name": "Knowledge level",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "lever",
-          "name": "Lever",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Lever: Governance",
-                  "Lever: Finance",
-                  "Lever: Innovation"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "sustainableDevelopmentGoals",
-          "name": "Sustainable Development Goals",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "GOAL 1: No Poverty",
-                  "GOAL 2: Zero Hunger",
-                  "GOAL 3: Good Health and Well-being",
-                  "GOAL 4: Quality Education",
-                  "GOAL 5: Gender Equality",
-                  "GOAL 6: Clean Water and Sanitation",
-                  "GOAL 7: Affordable and Clean Energy",
-                  "GOAL 8: Decent Work and Economic Growth",
-                  "GOAL 9: Industry, Innovation and Infrastructure",
-                  "GOAL 10: Reduced Inequality",
-                  "GOAL 11: Sustainable Cities and Communities",
-                  "GOAL 12: Responsible Consumption and Production",
-                  "GOAL 13: Climate Action",
-                  "GOAL 14: Life Below Water",
-                  "GOAL 15: Life on Land",
-                  "GOAL 16: Peace and Justice Strong Institutions",
-                  "GOAL 17: Partnerships to achieve the Goal"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "campaign",
-          "name": "Campaign",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "campaignSlug",
-          "name": "Campaign Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": true,
-          "omitted": false
         }
       ]
     },
