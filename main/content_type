@@ -2,7 +2,7 @@
   "sys": {
     "type": "Array"
   },
-  "total": 36,
+  "total": 41,
   "skip": 0,
   "limit": 100,
   "items": [
@@ -15,10 +15,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "siteClassificationSustainability",
+        "id": "blockHero",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:39.487Z",
-        "updatedAt": "2022-04-18T05:57:51.700Z",
+        "createdAt": "2022-11-01T07:53:44.715Z",
+        "updatedAt": "2022-11-21T11:18:04.458Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,259 +26,10 @@
             "linkType": "Environment"
           }
         },
-        "revision": 84
+        "revision": 14
       },
       "displayField": "internalId",
-      "name": "Site: ClassificationSustainability",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "primaryPillar",
-          "name": "Primary pillar",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "secondaryPillar",
-          "name": "Secondary pillar",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Pillar: Net Zero & Energy",
-                  "Pillar: Resilience & Adaptation",
-                  "Pillar: Circular Economies",
-                  "Pillar: Ecosystems & Resources",
-                  "Pillar: Social Sustainability"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "knowledgeLevel",
-          "name": "Knowledge level",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "lever",
-          "name": "Lever",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Lever: Governance",
-                  "Lever: Finance",
-                  "Lever: Innovation"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "sustainableDevelopmentGoals",
-          "name": "Sustainable Development Goals",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "GOAL 1: No Poverty",
-                  "GOAL 2: Zero Hunger",
-                  "GOAL 3: Good Health and Well-being",
-                  "GOAL 4: Quality Education",
-                  "GOAL 5: Gender Equality",
-                  "GOAL 6: Clean Water and Sanitation",
-                  "GOAL 7: Affordable and Clean Energy",
-                  "GOAL 8: Decent Work and Economic Growth",
-                  "GOAL 9: Industry, Innovation and Infrastructure",
-                  "GOAL 10: Reduced Inequality",
-                  "GOAL 11: Sustainable Cities and Communities",
-                  "GOAL 12: Responsible Consumption and Production",
-                  "GOAL 13: Climate Action",
-                  "GOAL 14: Life Below Water",
-                  "GOAL 15: Life on Land",
-                  "GOAL 16: Peace and Justice Strong Institutions",
-                  "GOAL 17: Partnerships to achieve the Goal"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "campaign",
-          "name": "Campaign",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "campaignSlug",
-          "name": "Campaign Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": true,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteClassificationPage",
-        "type": "ContentType",
-        "createdAt": "2021-10-04T04:56:22.904Z",
-        "updatedAt": "2022-04-18T05:57:51.581Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 223
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationPage",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability",
-                  "Initiative: Healthcare",
-                  "Initiative: Podiumtest",
-                  "Initiative: World Ocean",
-                  "Initiative: React"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "campaign",
-          "name": "Campaign",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "campaignSlug",
-          "name": "Campaign Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteDictionary",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:27.455Z",
-        "updatedAt": "2022-04-18T05:56:57.012Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 47
-      },
-      "displayField": "name",
-      "name": "Site: Dictionary",
+      "name": "Block: Hero",
       "description": "",
       "fields": [
         {
@@ -291,101 +42,11 @@
           "omitted": false
         },
         {
-          "id": "group",
-          "name": "Group",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "value",
-          "name": "Value",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "valueList",
-          "name": "Value List",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": []
-          }
-        },
-        {
-          "id": "valueListIds",
-          "name": "Value List Ids",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": []
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockCards",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:55.705Z",
-        "updatedAt": "2022-04-08T07:25:46.712Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 10
-      },
-      "displayField": "internalId",
-      "name": "Block: Cards",
-      "description": "",
-      "fields": [
-        {
           "id": "internalId",
           "name": "Internal name",
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
           "disabled": false,
           "omitted": false
         },
@@ -417,64 +78,17 @@
           "omitted": false
         },
         {
-          "id": "cards",
-          "name": "Cards",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "componentCard"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "showCardImage",
-          "name": "Show Card Image",
-          "type": "Boolean",
+          "id": "heroIcon",
+          "name": "Hero icon",
+          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "slideTransition",
-          "name": "Slide transition",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cardColumns",
-          "name": "Card columns",
-          "type": "Integer",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cardRows",
-          "name": "Card rows",
-          "type": "Integer",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "search",
-          "name": "Search",
+          "id": "heroPrimaryCard",
+          "name": "Hero Primary Card",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -484,15 +98,140 @@
           "validations": [
             {
               "linkContentType": [
-                "componentSearch"
+                "blockCards"
               ]
             }
           ]
         },
         {
-          "id": "cardsLimit",
-          "name": "Cards Limit",
-          "type": "Integer",
+          "id": "heroSecondaryCard",
+          "name": "Hero Secondary Card",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroMedia",
+          "name": "Hero media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addSponsor",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:43.966Z",
+        "updatedAt": "2022-11-21T11:12:44.643Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 53
+      },
+      "displayField": "sponsorLabel",
+      "name": "Add: Sponsor",
+      "description": "",
+      "fields": [
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "logoSize",
+          "name": "Logo Size",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorLabel",
+          "name": "Authorship : Sponsor Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorPartnerLabel",
+          "name": "Authorship Sponsor: Partner Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "authorshipPaidPostPartnerCardLabel",
+          "name": "Authorship Paid Post: Partner Card Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "innovationPartnerCardLabel",
+          "name": "Authorship Innovation: Partner Card Label",
+          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
@@ -512,7 +251,7 @@
         "id": "addPage",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:17.829Z",
-        "updatedAt": "2022-04-01T11:10:43.685Z",
+        "updatedAt": "2022-11-21T10:05:05.672Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -520,7 +259,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 20
+        "revision": 47
       },
       "displayField": "internalId",
       "name": "Add: Page",
@@ -547,19 +286,24 @@
         {
           "id": "classification",
           "name": "Classification",
-          "type": "Link",
+          "type": "Array",
           "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteClassificationPage"
-              ]
-            }
-          ]
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteBluePeaceClassification",
+                  "siteClassificationOcean",
+                  "siteClassificationSustainability"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
         },
         {
           "id": "authorship",
@@ -609,10 +353,7 @@
           "validations": [
             {
               "linkContentType": [
-                "blockCards",
-                "componentImage",
-                "componentVideo",
-                "layoutSection"
+                "blockHero"
               ]
             }
           ]
@@ -638,7 +379,8 @@
           "validations": [
             {
               "linkContentType": [
-                "blockCards"
+                "blockCards",
+                "componentImage"
               ]
             }
           ]
@@ -681,6 +423,23 @@
           }
         },
         {
+          "id": "tegBusiness",
+          "name": "Business",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addTegBusiness"
+              ]
+            }
+          ]
+        },
+        {
           "id": "paragraphs",
           "name": "Paragraphs",
           "type": "Array",
@@ -720,10 +479,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentImage",
+        "id": "componentInfographic",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:01.161Z",
-        "updatedAt": "2022-03-28T09:59:51.965Z",
+        "createdAt": "2021-09-29T07:46:57.116Z",
+        "updatedAt": "2022-11-21T05:32:07.033Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -731,10 +490,10 @@
             "linkType": "Environment"
           }
         },
-        "revision": 9
+        "revision": 12
       },
       "displayField": "internalId",
-      "name": "Component: Image",
+      "name": "Component: Infographic",
       "description": "",
       "fields": [
         {
@@ -747,11 +506,11 @@
           "omitted": false
         },
         {
-          "id": "slug",
-          "name": "slug",
+          "id": "type",
+          "name": "Type",
           "type": "Symbol",
           "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false
         },
@@ -760,12 +519,12 @@
           "name": "Name",
           "type": "Symbol",
           "localized": true,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "nameSeoSlug",
+          "id": "nameSlug",
           "name": "Name slug",
           "type": "Symbol",
           "localized": false,
@@ -783,18 +542,35 @@
           "omitted": false
         },
         {
-          "id": "image",
-          "name": "Image",
-          "type": "Link",
+          "id": "infographicUrl",
+          "name": "Infographic URL",
+          "type": "Symbol",
           "localized": false,
-          "required": true,
+          "required": false,
           "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
+          "omitted": false
         },
         {
-          "id": "mobileImage",
-          "name": "Mobile Image",
+          "id": "infographicHeight",
+          "name": "Infographic Height",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "vevUrl",
+          "name": "Vev URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -804,7 +580,53 @@
         },
         {
           "id": "altText",
-          "name": "Alt text",
+          "name": "Alt Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentPodcast",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:49.888Z",
+        "updatedAt": "2022-11-18T11:09:02.667Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 12
+      },
+      "displayField": "internalId",
+      "name": "Component: Podcast",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
           "type": "Symbol",
           "localized": true,
           "required": true,
@@ -812,8 +634,8 @@
           "omitted": false
         },
         {
-          "id": "imageFocus",
-          "name": "Image focus",
+          "id": "nameSlug",
+          "name": "Name slug",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -821,21 +643,123 @@
           "omitted": false
         },
         {
-          "id": "cta",
-          "name": "CTA",
+          "id": "episode",
+          "name": "Episode",
           "type": "Link",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
+          "linkType": "Asset"
+        },
+        {
+          "id": "podcastUrl",
+          "name": "Podcast URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "podcastHeight",
+          "name": "Podcast Height ",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "snippet",
+          "name": "Snippet",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration Time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockPoll",
+        "type": "ContentType",
+        "createdAt": "2022-11-09T10:28:51.243Z",
+        "updatedAt": "2022-11-15T04:47:35.364Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9
+      },
+      "displayField": "name",
+      "name": "Block: Poll",
+      "description": "To add Poll",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pollId",
+          "name": "Poll ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -851,7 +775,7 @@
         "id": "addPublication",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:19.335Z",
-        "updatedAt": "2022-03-21T10:23:07.729Z",
+        "updatedAt": "2022-11-09T10:45:16.575Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -859,7 +783,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 15
+        "revision": 63
       },
       "displayField": "internalId",
       "name": "Add: Publication",
@@ -879,7 +803,7 @@
           "name": "Internal Id",
           "type": "Symbol",
           "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false
         },
@@ -895,20 +819,24 @@
         {
           "id": "classification",
           "name": "Classification",
-          "type": "Link",
+          "type": "Array",
           "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteBluePeaceClassification",
-                "siteClassificationSustainability"
-              ]
-            }
-          ]
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteBluePeaceClassification",
+                  "siteClassificationOcean",
+                  "siteClassificationSustainability"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
         },
         {
           "id": "authorship",
@@ -985,7 +913,8 @@
           "validations": [
             {
               "linkContentType": [
-                "componentImage"
+                "componentImage",
+                "componentInfographic"
               ]
             }
           ]
@@ -1009,6 +938,23 @@
             ],
             "linkType": "Entry"
           }
+        },
+        {
+          "id": "tegBusiness",
+          "name": "Business",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addTegBusiness"
+              ]
+            }
+          ]
         },
         {
           "id": "author",
@@ -1060,6 +1006,7 @@
                 "linkContentType": [
                   "blockCards",
                   "blockParagraph",
+                  "blockPoll",
                   "blockStatement"
                 ]
               }
@@ -1150,10 +1097,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "addSponsor",
+        "id": "blockParagraph",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:43.966Z",
-        "updatedAt": "2022-03-17T12:54:43.592Z",
+        "createdAt": "2021-09-29T07:46:48.492Z",
+        "updatedAt": "2022-11-07T12:27:55.794Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1161,19 +1108,19 @@
             "linkType": "Environment"
           }
         },
-        "revision": 32
+        "revision": 5
       },
-      "displayField": "sponsorLabel",
-      "name": "Add: Sponsor",
+      "displayField": "internalName",
+      "name": "Block: Paragraph",
       "description": "",
       "fields": [
         {
-          "id": "internalId",
+          "id": "internalName",
           "name": "Internal name",
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "disabled": true,
+          "disabled": false,
           "omitted": false
         },
         {
@@ -1182,12 +1129,12 @@
           "type": "Symbol",
           "localized": true,
           "required": false,
-          "disabled": true,
+          "disabled": false,
           "omitted": false
         },
         {
-          "id": "id",
-          "name": "Internal Id",
+          "id": "titleSlug",
+          "name": "Title Slug",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -1195,8 +1142,35 @@
           "omitted": false
         },
         {
-          "id": "organisation",
-          "name": "Organisation",
+          "id": "publicationIndex",
+          "name": "Publication index",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "visibleLines",
+          "name": "Visible lines",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "paragraph",
+          "name": "Paragraph",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -1206,23 +1180,82 @@
           "validations": [
             {
               "linkContentType": [
-                "addOrganisation"
+                "componentImage",
+                "componentInfographic",
+                "componentPodcast",
+                "componentPoll",
+                "componentVideo"
               ]
             }
           ]
         },
         {
-          "id": "sponsorLabel",
-          "name": "Authorship : Sponsor Label",
-          "type": "Symbol",
-          "localized": true,
+          "id": "mediaFullWidth",
+          "name": "Media full width",
+          "type": "Boolean",
+          "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "sponsorPartnerLabel",
-          "name": "Authorship : Sponsor Partner Label",
+          "id": "blockQuote",
+          "name": "Block quote",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockQuoteMedia",
+          "name": "Block quote media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson",
+                "componentImage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentCta",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:10.949Z",
+        "updatedAt": "2022-10-06T12:39:56.977Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Component: CTA",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -1230,9 +1263,62 @@
           "omitted": false
         },
         {
-          "id": "innovationPartnerCardLabel",
-          "name": "Authorship : Innovation Partner Card Label",
+          "id": "type",
+          "name": "Type",
           "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkLabel",
+          "name": "Link label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkText",
+          "name": "Link text",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pageLink",
+          "name": "Page link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "urlLink",
+          "name": "URL link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showInFooter",
+          "name": "Show in Footer",
+          "type": "Boolean",
           "localized": false,
           "required": false,
           "disabled": false,
@@ -1252,7 +1338,7 @@
         "id": "addEvent",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:46.233Z",
-        "updatedAt": "2022-02-22T11:24:27.450Z",
+        "updatedAt": "2022-10-04T13:23:36.909Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1260,7 +1346,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 25
+        "revision": 45
       },
       "displayField": "internalId",
       "name": "Add: Event",
@@ -1296,19 +1382,24 @@
         {
           "id": "classification",
           "name": "Classification",
-          "type": "Link",
+          "type": "Array",
           "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteClassificationSustainability"
-              ]
-            }
-          ]
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteBluePeaceClassification",
+                  "siteClassificationOcean",
+                  "siteClassificationSustainability"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
         },
         {
           "id": "title",
@@ -1367,7 +1458,8 @@
           "validations": [
             {
               "linkContentType": [
-                "componentImage"
+                "componentImage",
+                "componentInfographic"
               ]
             }
           ]
@@ -1543,6 +1635,15 @@
             "type": "Symbol",
             "validations": []
           }
+        },
+        {
+          "id": "demoField",
+          "name": "DemoField",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -1555,10 +1656,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "siteTenant",
+        "id": "layoutSection",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:12.323Z",
-        "updatedAt": "2022-02-22T06:26:38.523Z",
+        "createdAt": "2021-09-29T07:47:32.000Z",
+        "updatedAt": "2022-09-23T04:37:12.993Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1566,10 +1667,10 @@
             "linkType": "Environment"
           }
         },
-        "revision": 7
+        "revision": 10
       },
       "displayField": "internalId",
-      "name": "Site: Initiative",
+      "name": "Layout: Section",
       "description": "",
       "fields": [
         {
@@ -1582,59 +1683,8 @@
           "omitted": false
         },
         {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability",
-                  "Initiative: Healthcare",
-                  "Initiative: Podiumtest",
-                  "Initiative: World Ocean",
-                  "Initiative: React"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "pageTemplateDefault",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T06:35:33.469Z",
-        "updatedAt": "2022-02-22T06:26:07.109Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 4
-      },
-      "displayField": "name",
-      "name": "Template: Default",
-      "description": "",
-      "fields": [
-        {
-          "id": "name",
-          "name": "Internal Name",
+          "id": "backgroundColour",
+          "name": "Background Colour",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -1642,53 +1692,8 @@
           "omitted": false
         },
         {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability",
-                  "Initiative: Healthcare",
-                  "Initiative: Podiumtest",
-                  "Initiative: World Ocean",
-                  "Initiative: React"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "main",
-          "name": "Main",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addEvent",
-                "addOrganisation",
-                "addPage",
-                "addPerson",
-                "addPublication",
-                "addSponsor"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sections",
-          "name": "Sections",
+          "id": "component",
+          "name": "Component",
           "type": "Array",
           "localized": false,
           "required": false,
@@ -1699,7 +1704,11 @@
             "validations": [
               {
                 "linkContentType": [
-                  "layoutSection"
+                  "blockCards",
+                  "blockForm",
+                  "blockParagraph",
+                  "blockSpotlight",
+                  "blockStatement"
                 ]
               }
             ],
@@ -1717,10 +1726,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentCta",
+        "id": "siteConfig",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:10.949Z",
-        "updatedAt": "2022-02-14T13:11:47.931Z",
+        "createdAt": "2021-09-29T07:46:40.870Z",
+        "updatedAt": "2022-09-16T06:34:24.372Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1729,105 +1738,6 @@
           }
         },
         "revision": 3
-      },
-      "displayField": "internalId",
-      "name": "Component: CTA",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "linkLabel",
-          "name": "Link label",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "linkText",
-          "name": "Link text",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "pageLink",
-          "name": "Page link",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "page"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "urlLink",
-          "name": "URL link",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "showInFooter",
-          "name": "Show in Footer",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteConfig",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:40.870Z",
-        "updatedAt": "2022-02-04T11:11:50.527Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 2
       },
       "displayField": "internalId",
       "name": "Site: Config",
@@ -1936,6 +1846,15 @@
           "required": false,
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "gtmId",
+          "name": "GTM ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -1948,10 +1867,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "siteBluePeaceClassification",
+        "id": "siteDictionary",
         "type": "ContentType",
-        "createdAt": "2022-01-26T17:39:19.784Z",
-        "updatedAt": "2022-01-26T17:41:20.508Z",
+        "createdAt": "2021-09-29T07:47:27.455Z",
+        "updatedAt": "2022-09-13T08:54:11.054Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1959,10 +1878,449 @@
             "linkType": "Environment"
           }
         },
-        "revision": 4
+        "revision": 54
+      },
+      "displayField": "name",
+      "name": "Site: Dictionary",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "group",
+          "name": "Group",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "valueList",
+          "name": "Value List",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteHeader",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:34.853Z",
+        "updatedAt": "2022-09-05T06:25:04.923Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
       },
       "displayField": "internalId",
-      "name": "Site: BluePeaceClassification",
+      "name": "Site: Header",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLogo",
+          "name": "Partner logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu",
+          "name": "Menu",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteMenu"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "userAccount",
+          "name": "User account",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "newsletterLink",
+          "name": "Newsletter Link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addTegBusiness",
+        "type": "ContentType",
+        "createdAt": "2022-08-10T12:47:37.362Z",
+        "updatedAt": "2022-08-22T11:36:12.525Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13
+      },
+      "displayField": "title",
+      "name": "Add: TEG Business",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLabel",
+          "name": "Business Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentDownloadable",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:04.935Z",
+        "updatedAt": "2022-08-16T08:19:57.578Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "internalId",
+      "name": "Component: Downloadable",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "file",
+          "name": "File",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "linkText",
+          "name": "Link Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addPartner",
+        "type": "ContentType",
+        "createdAt": "2022-08-04T09:35:04.108Z",
+        "updatedAt": "2022-08-04T10:11:51.701Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10
+      },
+      "displayField": "internalId",
+      "name": "Add: Partner",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLabel",
+          "name": "Partner label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationOcean",
+        "type": "ContentType",
+        "createdAt": "2022-05-30T07:53:09.606Z",
+        "updatedAt": "2022-07-28T05:43:41.793Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationOcean",
       "description": "",
       "fields": [
         {
@@ -1987,7 +2345,59 @@
             "validations": [
               {
                 "in": [
-                  "Initiative: BluePeace"
+                  "Initiative: Ocean"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "primaryPillar",
+          "name": "PrimaryPillar",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryPillar",
+          "name": "Secondary Pillar",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Pillar: Sustainable Ocean Economy",
+                  "Pillar: Ocean & Climate",
+                  "Pillar: Biodiversity, Ecosystems & Resources",
+                  "Pillar: Ocean Health"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Lever: Governance",
+                  "Lever: Finance",
+                  "Lever: Innovation"
                 ]
               }
             ]
@@ -2004,107 +2414,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "page",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T06:32:15.158Z",
-        "updatedAt": "2022-01-25T04:39:26.941Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 7
-      },
-      "displayField": "name",
-      "name": "Compose: Page",
-      "description": "Represents a web page in Compose. DO NOT DELETE",
-      "fields": [
-        {
-          "id": "name",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Page title",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "slug",
-          "name": "Slug",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "seo",
-          "name": "SEO metadata",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "seo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "content",
-          "name": "Content",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "templateArticle",
-                "pageTemplateArticle",
-                "pageTemplateLandingPage",
-                "pageArticleWithoutPublication",
-                "pageWorldTunaDay",
-                "pageTemplePublication",
-                "pageTemplateDefault",
-                "pageGetstarted",
-                "pageTemplateDefault"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "componentSearch",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:00.244Z",
-        "updatedAt": "2022-01-19T06:46:28.584Z",
+        "updatedAt": "2022-07-18T11:58:38.228Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -2112,7 +2425,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 10
+        "revision": 23
       },
       "displayField": "internalId",
       "name": "Component: Search",
@@ -2260,10 +2573,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "blockParagraph",
+        "id": "siteBluePeaceClassification",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:48.492Z",
-        "updatedAt": "2022-01-06T09:28:41.661Z",
+        "createdAt": "2022-01-26T17:39:19.784Z",
+        "updatedAt": "2022-07-13T02:22:53.178Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -2271,14 +2584,14 @@
             "linkType": "Environment"
           }
         },
-        "revision": 4
+        "revision": 5
       },
-      "displayField": "internalName",
-      "name": "Block: Paragraph",
+      "displayField": "internalId",
+      "name": "Site: ClassificationBluePeace",
       "description": "",
       "fields": [
         {
-          "id": "internalName",
+          "id": "internalId",
           "name": "Internal name",
           "type": "Symbol",
           "localized": false,
@@ -2287,105 +2600,23 @@
           "omitted": false
         },
         {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "titleSlug",
-          "name": "Title Slug",
-          "type": "Symbol",
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
           "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "publicationIndex",
-          "name": "Publication index",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "visibleLines",
-          "name": "Visible lines",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "paragraph",
-          "name": "Paragraph",
-          "type": "RichText",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "media",
-          "name": "Media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
+          "required": true,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentInfographic",
-                "componentPodcast",
-                "componentVideo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mediaFullWidth",
-          "name": "Media full width",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "blockQuote",
-          "name": "Block quote",
-          "type": "RichText",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "blockQuoteMedia",
-          "name": "Block quote media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addPerson",
-                "componentImage"
-              ]
-            }
-          ]
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: BluePeace"
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -2398,10 +2629,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentPodcast",
+        "id": "pageTemplateDefault",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:49.888Z",
-        "updatedAt": "2021-12-21T06:41:19.973Z",
+        "createdAt": "2021-09-29T06:35:33.469Z",
+        "updatedAt": "2022-07-13T02:20:00.773Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -2411,8 +2642,87 @@
         },
         "revision": 7
       },
+      "displayField": "name",
+      "name": "Template: Default",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "main",
+          "name": "Main",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addEvent",
+                "addOrganisation",
+                "addPage",
+                "addPerson",
+                "addPublication",
+                "addSponsor"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sections",
+          "name": "Sections",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "layoutSection"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentImage",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:01.161Z",
+        "updatedAt": "2022-07-05T09:50:30.595Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14
+      },
       "displayField": "internalId",
-      "name": "Component: Podcast",
+      "name": "Component: Image",
       "description": "",
       "fields": [
         {
@@ -2429,7 +2739,364 @@
           "name": "Name",
           "type": "Symbol",
           "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSeoSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
           "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "mobileImage",
+          "name": "Mobile Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "altText",
+          "name": "Alt text",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageFocus",
+          "name": "Image focus",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockCards",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:55.705Z",
+        "updatedAt": "2022-06-29T15:18:50.647Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 19
+      },
+      "displayField": "internalId",
+      "name": "Block: Cards",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cards",
+          "name": "Cards",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentCard"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "showCardImage",
+          "name": "Show Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slideTransition",
+          "name": "Slide transition",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardColumns",
+          "name": "Card columns",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardRows",
+          "name": "Card rows",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentSearch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cardsLimit",
+          "name": "Cards Limit",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationPage",
+        "type": "ContentType",
+        "createdAt": "2021-10-04T04:56:22.904Z",
+        "updatedAt": "2022-06-27T18:43:53.843Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 269
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationPage",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: World Ocean",
+                  "Initiative: React",
+                  "Initiative: Ocean"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentVideo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:38.551Z",
+        "updatedAt": "2022-06-20T09:08:02.160Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "internalId",
+      "name": "Component: Video",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
           "disabled": false,
           "omitted": false
         },
@@ -2443,32 +3110,385 @@
           "omitted": false
         },
         {
-          "id": "episode",
-          "name": "Episode",
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "youtubeId",
+          "name": "YouTube ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "brightcoveId",
+          "name": "BrightCove ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "videoUrl",
+          "name": "Video URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thumbnail",
+          "name": "Thumbnail",
           "type": "Link",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "snippet",
-          "name": "Snippet",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
         },
         {
           "id": "durationTime",
-          "name": "Duration Time",
+          "name": "Duration time",
           "type": "Number",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteClassificationSustainability",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:39.487Z",
+        "updatedAt": "2022-06-10T09:41:14.822Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 120
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationSustainability",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "primaryPillar",
+          "name": "Primary pillar",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryPillar",
+          "name": "Secondary pillar",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Pillar: Net Zero & Energy",
+                  "Pillar: Resilience & Adaptation",
+                  "Pillar: Circular Economies",
+                  "Pillar: Ecosystems & Resources",
+                  "Pillar: Social Sustainability"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "knowledgeLevel",
+          "name": "Knowledge level",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Lever: Governance",
+                  "Lever: Finance",
+                  "Lever: Innovation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "sustainableDevelopmentGoals",
+          "name": "Sustainable Development Goals",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "GOAL 1: No Poverty",
+                  "GOAL 2: Zero Hunger",
+                  "GOAL 3: Good Health and Well-being",
+                  "GOAL 4: Quality Education",
+                  "GOAL 5: Gender Equality",
+                  "GOAL 6: Clean Water and Sanitation",
+                  "GOAL 7: Affordable and Clean Energy",
+                  "GOAL 8: Decent Work and Economic Growth",
+                  "GOAL 9: Industry, Innovation and Infrastructure",
+                  "GOAL 10: Reduced Inequality",
+                  "GOAL 11: Sustainable Cities and Communities",
+                  "GOAL 12: Responsible Consumption and Production",
+                  "GOAL 13: Climate Action",
+                  "GOAL 14: Life Below Water",
+                  "GOAL 15: Life on Land",
+                  "GOAL 16: Peace and Justice Strong Institutions",
+                  "GOAL 17: Partnerships to achieve the Goal"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteTenant",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:12.323Z",
+        "updatedAt": "2022-06-03T06:01:46.159Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8
+      },
+      "displayField": "internalId",
+      "name": "Site: Initiative",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: React",
+                  "Initiative: Ocean"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.158Z",
+        "updatedAt": "2022-01-25T04:39:26.941Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "name",
+      "name": "Compose: Page",
+      "description": "Represents a web page in Compose. DO NOT DELETE",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Page title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seo",
+          "name": "SEO metadata",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "seo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "templateArticle",
+                "pageTemplateArticle",
+                "pageTemplateLandingPage",
+                "pageArticleWithoutPublication",
+                "pageWorldTunaDay",
+                "pageTemplePublication",
+                "pageTemplateDefault",
+                "pageGetstarted",
+                "pageTemplateDefault"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2935,89 +3955,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentDownloadable",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:04.935Z",
-        "updatedAt": "2021-12-03T11:09:18.038Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 6
-      },
-      "displayField": "internalId",
-      "name": "Component: Downloadable",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "file",
-          "name": "File",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "linkText",
-          "name": "Link Text",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "componentCard",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:36.271Z",
@@ -3145,124 +4082,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "siteHeader",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:34.853Z",
-        "updatedAt": "2021-09-29T07:47:34.853Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Site: Header",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "logo",
-          "name": "Logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerLogo",
-          "name": "Partner logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "menu",
-          "name": "Menu",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "siteMenu"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "search",
-          "name": "Search",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "userAccount",
-          "name": "User account",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "seo",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:32:15.266Z",
@@ -3337,76 +4156,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "layoutSection",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:32.000Z",
-        "updatedAt": "2021-09-29T07:47:32.000Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Layout: Section",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "alternativeBackgroundColour",
-          "name": "Alternative background colour",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "component",
-          "name": "Component",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCards",
-                  "blockForm",
-                  "blockParagraph",
-                  "blockSpotlight",
-                  "blockStatement"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
         }
       ]
     },
@@ -3890,79 +4639,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentInfographic",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:57.116Z",
-        "updatedAt": "2021-09-29T07:46:57.116Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Component: Infographic",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "infographicUrl",
-          "name": "Infographic URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "blockCtas",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:54.295Z",
@@ -4154,132 +4830,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentVideo",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:38.551Z",
-        "updatedAt": "2021-09-29T07:46:38.551Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Component: Video",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "youtubeId",
-          "name": "YouTube ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "brightcoveId",
-          "name": "BrightCove ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "videoUrl",
-          "name": "Video URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "thumbnail",
-          "name": "Thumbnail",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "durationTime",
-          "name": "Duration time",
-          "type": "Number",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     }
