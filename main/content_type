@@ -18,7 +18,7 @@
         "id": "addSponsor",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:43.966Z",
-        "updatedAt": "2022-11-25T11:37:17.681Z",
+        "updatedAt": "2022-11-25T11:37:52.368Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,30 +26,12 @@
             "linkType": "Environment"
           }
         },
-        "revision": 55
+        "revision": 56
       },
       "displayField": "sponsorLabel",
       "name": "Add: Sponsor",
       "description": "",
       "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": true,
-          "omitted": false
-        },
         {
           "id": "id",
           "name": "Internal Id",
