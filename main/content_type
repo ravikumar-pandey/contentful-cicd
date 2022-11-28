@@ -15,6 +15,107 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "componentPodcast",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:49.888Z",
+        "updatedAt": "2022-11-28T10:06:06.713Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13
+      },
+      "displayField": "internalId",
+      "name": "Component: Podcast",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "episode",
+          "name": "Episode",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "podcastUrl",
+          "name": "Podcast URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "podcastHeight",
+          "name": "Podcast Height ",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "snippet",
+          "name": "Snippet",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration Time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "addSponsor",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:43.966Z",
@@ -582,107 +683,6 @@
           "id": "altText",
           "name": "Alt Text",
           "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentPodcast",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:49.888Z",
-        "updatedAt": "2022-11-18T11:09:02.667Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 12
-      },
-      "displayField": "internalId",
-      "name": "Component: Podcast",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "episode",
-          "name": "Episode",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "podcastUrl",
-          "name": "Podcast URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "podcastHeight",
-          "name": "Podcast Height ",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "snippet",
-          "name": "Snippet",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "durationTime",
-          "name": "Duration Time",
-          "type": "Number",
           "localized": false,
           "required": false,
           "disabled": false,
