@@ -15,6 +15,114 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "addSponsor",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:43.966Z",
+        "updatedAt": "2022-11-29T06:22:32.995Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 59
+      },
+      "displayField": "internalId",
+      "name": "Add: Sponsor",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "logoSize",
+          "name": "Logo Size",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorLabel",
+          "name": "Authorship : Sponsor Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorPartnerLabel",
+          "name": "Authorship Sponsor: Partner Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "authorshipPaidPostPartnerCardLabel",
+          "name": "Authorship Paid Post: Partner Card Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "innovationPartnerCardLabel",
+          "name": "Authorship Innovation: Partner Card Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "componentPodcast",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:49.888Z",
@@ -100,105 +208,6 @@
           "id": "durationTime",
           "name": "Duration Time",
           "type": "Number",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addSponsor",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:43.966Z",
-        "updatedAt": "2022-11-25T11:37:52.368Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 56
-      },
-      "displayField": "sponsorLabel",
-      "name": "Add: Sponsor",
-      "description": "",
-      "fields": [
-        {
-          "id": "id",
-          "name": "Internal Id",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "organisation",
-          "name": "Organisation",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addOrganisation"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "logoSize",
-          "name": "Logo Size",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "sponsorLabel",
-          "name": "Authorship : Sponsor Label",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "sponsorPartnerLabel",
-          "name": "Authorship Sponsor: Partner Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "authorshipPaidPostPartnerCardLabel",
-          "name": "Authorship Paid Post: Partner Card Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "innovationPartnerCardLabel",
-          "name": "Authorship Innovation: Partner Card Label",
-          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
