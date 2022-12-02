@@ -18,7 +18,7 @@
         "id": "addPage",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:17.829Z",
-        "updatedAt": "2022-12-02T13:52:57.610Z",
+        "updatedAt": "2022-12-02T13:53:15.487Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,7 +26,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 50
+        "revision": 51
       },
       "displayField": "internalId",
       "name": "Add: Page",
@@ -85,24 +85,6 @@
           "id": "title",
           "name": "Title",
           "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
           "localized": true,
           "required": false,
           "disabled": false,
