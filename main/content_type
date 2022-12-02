@@ -15,6 +15,202 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "addPage",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:17.829Z",
+        "updatedAt": "2022-12-02T13:52:32.461Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 48
+      },
+      "displayField": "internalId",
+      "name": "Add: Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteBluePeaceClassification",
+                  "siteClassificationOcean",
+                  "siteClassificationSustainability"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "authorship",
+          "name": "Authorship",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockHero"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroIcon",
+          "name": "Hero icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsors",
+          "name": "Sponsors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addSponsor"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "tegBusiness",
+          "name": "Business",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addTegBusiness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paragraphs",
+          "name": "Paragraphs",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockParagraph"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "displayPartnerLogo",
+          "name": "Display Partner Logo",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "blockCards",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:55.705Z",
@@ -501,237 +697,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addPage",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:17.829Z",
-        "updatedAt": "2022-11-21T10:05:05.672Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 47
-      },
-      "displayField": "internalId",
-      "name": "Add: Page",
-      "description": "",
-      "fields": [
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "classification",
-          "name": "Classification",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "siteBluePeaceClassification",
-                  "siteClassificationOcean",
-                  "siteClassificationSustainability"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "authorship",
-          "name": "Authorship",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "hero",
-          "name": "Hero",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockHero"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heroIcon",
-          "name": "Hero icon",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "heroPrimaryCard",
-          "name": "Hero Primary Card",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards",
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heroSecondaryCard",
-          "name": "Hero Secondary Card",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sponsors",
-          "name": "Sponsors",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "addSponsor"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "tegBusiness",
-          "name": "Business",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addTegBusiness"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "paragraphs",
-          "name": "Paragraphs",
-          "type": "Array",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockParagraph"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "displayPartnerLogo",
-          "name": "Display Partner Logo",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
