@@ -15,6 +15,348 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "addPublication",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:19.335Z",
+        "updatedAt": "2022-12-15T09:50:30.519Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 64
+      },
+      "displayField": "internalId",
+      "name": "Add: Publication",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "classification",
+          "name": "Classification",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteBluePeaceClassification",
+                  "siteClassificationOcean",
+                  "siteClassificationSustainability"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "authorship",
+          "name": "Authorship",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "synopsis",
+          "name": "Synopsis",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alternateImage",
+          "name": "Alternate Card Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentInfographic"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sponsors",
+          "name": "Sponsors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "addSponsor"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "tegBusiness",
+          "name": "Business",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addTegBusiness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "publishedDate",
+          "name": "Published date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "wordCount",
+          "name": "Word count",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "paragraphs",
+          "name": "Paragraphs",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockParagraph",
+                  "blockPoll",
+                  "blockStatement"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "references",
+          "name": "References",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockParagraph"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "externalUrl",
+          "name": "External Url",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "downloadables",
+          "name": "Downloadables",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentDownloadable"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "displayCardImage",
+          "name": "Display Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "displaySponsorLogo",
+          "name": "Display Sponsor Logo",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroBlock",
+          "name": "Hero Block",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockHero"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "blockParagraph",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:48.492Z",
@@ -1089,331 +1431,6 @@
           "id": "pollId",
           "name": "Poll ID",
           "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addPublication",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:19.335Z",
-        "updatedAt": "2022-11-09T10:45:16.575Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 63
-      },
-      "displayField": "internalId",
-      "name": "Add: Publication",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "id",
-          "name": "Internal Id",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "classification",
-          "name": "Classification",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "siteBluePeaceClassification",
-                  "siteClassificationOcean",
-                  "siteClassificationSustainability"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "authorship",
-          "name": "Authorship",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "synopsis",
-          "name": "Synopsis",
-          "type": "RichText",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "hero",
-          "name": "Hero",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentVideo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "alternateImage",
-          "name": "Alternate Card Image",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentInfographic"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sponsors",
-          "name": "Sponsors",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "addSponsor"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "tegBusiness",
-          "name": "Business",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addTegBusiness"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "author",
-          "name": "Author",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addPerson"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "publishedDate",
-          "name": "Published date",
-          "type": "Date",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "wordCount",
-          "name": "Word count",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "paragraphs",
-          "name": "Paragraphs",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCards",
-                  "blockParagraph",
-                  "blockPoll",
-                  "blockStatement"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "references",
-          "name": "References",
-          "type": "Link",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockParagraph"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "externalUrl",
-          "name": "External Url",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "downloadables",
-          "name": "Downloadables",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "componentDownloadable"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "displayCardImage",
-          "name": "Display Card Image",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "displaySponsorLogo",
-          "name": "Display Sponsor Logo",
-          "type": "Boolean",
           "localized": false,
           "required": false,
           "disabled": false,
