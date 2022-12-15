@@ -15,93 +15,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentAudio",
-        "type": "ContentType",
-        "createdAt": "2022-12-12T04:54:26.072Z",
-        "updatedAt": "2022-12-12T06:56:52.428Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 7
-      },
-      "displayField": "internalName",
-      "name": "Component: Audio",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalName",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "audioUrl",
-          "name": "Audio URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "audioFile",
-          "name": "Audio File",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "blockParagraph",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:48.492Z",
-        "updatedAt": "2022-12-12T06:00:47.311Z",
+        "updatedAt": "2022-12-15T09:18:49.927Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -109,26 +26,26 @@
             "linkType": "Environment"
           }
         },
-        "revision": 8
+        "revision": 11
       },
       "displayField": "internalName",
       "name": "Block: Paragraph",
       "description": "",
       "fields": [
         {
-          "id": "internalName",
-          "name": "Internal name",
+          "id": "title",
+          "name": "Title",
           "type": "Symbol",
-          "localized": false,
+          "localized": true,
           "required": false,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "title",
-          "name": "Title",
+          "id": "internalName",
+          "name": "Internal name",
           "type": "Symbol",
-          "localized": true,
+          "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
@@ -234,6 +151,89 @@
           "required": false,
           "disabled": false,
           "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentAudio",
+        "type": "ContentType",
+        "createdAt": "2022-12-12T04:54:26.072Z",
+        "updatedAt": "2022-12-12T06:56:52.428Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "internalName",
+      "name": "Component: Audio",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "audioUrl",
+          "name": "Audio URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "audioFile",
+          "name": "Audio File",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
         }
       ]
     },
