@@ -15,10 +15,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "page",
+        "id": "siteMenu",
         "type": "ContentType",
-        "createdAt": "2021-09-29T06:32:15.158Z",
-        "updatedAt": "2022-12-16T07:35:10.681Z",
+        "createdAt": "2021-09-29T07:47:15.503Z",
+        "updatedAt": "2022-12-19T13:10:19.129Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,26 +26,603 @@
             "linkType": "Environment"
           }
         },
-        "revision": 8
+        "revision": 6
       },
-      "displayField": "name",
-      "name": "Compose: Page",
-      "description": "Represents a web page in Compose. DO NOT DELETE",
+      "displayField": "internalId",
+      "name": "Site: Menu",
+      "description": "",
       "fields": [
         {
-          "id": "name",
+          "id": "menuText",
+          "name": "Menu text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
           "name": "Internal name",
           "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "menuLink",
+          "name": "Menu link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menuItems",
+          "name": "Menu items",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockCtas",
+                  "siteMenu"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteHeader",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:34.853Z",
+        "updatedAt": "2022-12-19T13:02:10.214Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Site: Header",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLogo",
+          "name": "Partner logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu",
+          "name": "Menu",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "siteMenu"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "userAccount",
+          "name": "User account",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "newsletterLink",
+          "name": "Newsletter Link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteGtm",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:20.731Z",
+        "updatedAt": "2022-12-19T13:01:44.996Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "internalId",
+      "name": "Site: GTM",
+      "description": "",
+      "fields": [
+        {
+          "id": "gtmTag",
+          "name": "GTM tag",
+          "type": "Text",
           "localized": false,
           "required": true,
           "disabled": false,
           "omitted": false
         },
         {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "entities",
+          "name": "Entities",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Reading Time"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteConfig",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:40.870Z",
+        "updatedAt": "2022-12-19T12:54:22.011Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "internalId",
+      "name": "Site: Config",
+      "description": "",
+      "fields": [
+        {
+          "id": "siteTitle",
+          "name": "Site title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "averageWords",
+          "name": "Average words",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "header",
+          "name": "Header",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteHeader"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteFooter"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "labels",
+          "name": "Labels",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteReference"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "themeRef",
+          "name": "ThemeRef",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "gtmId",
+          "name": "GTM ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "siteBanner",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:22.370Z",
+        "updatedAt": "2022-12-19T12:52:28.390Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "internalId",
+      "name": "Site: Banner",
+      "description": "",
+      "fields": [
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "siteTenant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startDatetime",
+          "name": "Start date/time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endDatetime",
+          "name": "End date/time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bannerPosition",
+          "name": "Banner position",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.158Z",
+        "updatedAt": "2022-12-19T12:47:38.237Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9
+      },
+      "displayField": "name",
+      "name": "Compose: Page",
+      "description": "Represents a web page in Compose. DO NOT DELETE",
+      "fields": [
+        {
           "id": "title",
           "name": "Page title",
           "type": "Symbol",
           "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
           "required": true,
           "disabled": false,
           "omitted": false
@@ -112,10 +689,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "blockPoll",
+        "id": "blockForm",
         "type": "ContentType",
-        "createdAt": "2022-11-09T10:28:51.243Z",
-        "updatedAt": "2022-12-16T07:32:12.130Z",
+        "createdAt": "2021-09-29T07:47:05.827Z",
+        "updatedAt": "2022-12-19T12:43:04.935Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -123,15 +700,24 @@
             "linkType": "Environment"
           }
         },
-        "revision": 10
+        "revision": 3
       },
-      "displayField": "name",
-      "name": "Block: Poll",
-      "description": "To add Poll",
+      "displayField": "title",
+      "name": "Block: Form",
+      "description": "",
       "fields": [
         {
-          "id": "internalName",
-          "name": "Internal Name",
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -139,19 +725,10 @@
           "omitted": false
         },
         {
-          "id": "name",
-          "name": "Name",
+          "id": "subtitle",
+          "name": "Subtitle",
           "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": false,
+          "localized": true,
           "required": false,
           "disabled": false,
           "omitted": false
@@ -160,15 +737,117 @@
           "id": "description",
           "name": "Description",
           "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "htmlForm",
+          "name": "HTML form (No Comment Tags Allowed)",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockCtas",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:54.295Z",
+        "updatedAt": "2022-12-19T12:42:55.322Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Block: CTAs",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "pollId",
-          "name": "Poll ID",
+          "id": "title",
+          "name": "Title",
           "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentCta"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "linksCount",
+          "name": "Links count",
+          "type": "Integer",
           "localized": false,
           "required": false,
           "disabled": false,
@@ -188,7 +867,7 @@
         "id": "addPublication",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:19.335Z",
-        "updatedAt": "2022-12-15T09:50:30.519Z",
+        "updatedAt": "2022-12-19T12:40:40.197Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -196,12 +875,21 @@
             "linkType": "Environment"
           }
         },
-        "revision": 64
+        "revision": 66
       },
       "displayField": "internalId",
       "name": "Add: Publication",
       "description": "",
       "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
         {
           "id": "internalId",
           "name": "Internal name",
@@ -257,15 +945,6 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
           "disabled": false,
           "omitted": false
         },
@@ -527,10 +1206,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "blockParagraph",
+        "id": "addPerson",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:48.492Z",
-        "updatedAt": "2022-12-15T09:18:49.927Z",
+        "createdAt": "2021-09-29T07:46:43.119Z",
+        "updatedAt": "2022-12-19T12:40:27.987Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -538,15 +1217,15 @@
             "linkType": "Environment"
           }
         },
-        "revision": 11
+        "revision": 8
       },
-      "displayField": "internalName",
-      "name": "Block: Paragraph",
+      "displayField": "internalId",
+      "name": "Add: Person",
       "description": "",
       "fields": [
         {
           "id": "title",
-          "name": "Title",
+          "name": "Name",
           "type": "Symbol",
           "localized": true,
           "required": false,
@@ -554,7 +1233,7 @@
           "omitted": false
         },
         {
-          "id": "internalName",
+          "id": "internalId",
           "name": "Internal name",
           "type": "Symbol",
           "localized": false,
@@ -563,138 +1242,8 @@
           "omitted": false
         },
         {
-          "id": "titleSlug",
-          "name": "Title Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "publicationIndex",
-          "name": "Publication index",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "visibleLines",
-          "name": "Visible lines",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "paragraph",
-          "name": "Paragraph",
-          "type": "RichText",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "media",
-          "name": "Media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentAudio",
-                "componentImage",
-                "componentInfographic",
-                "componentPodcast",
-                "componentVideo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mediaFullWidth",
-          "name": "Media full width",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "blockQuote",
-          "name": "Block quote",
-          "type": "RichText",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "blockQuoteMedia",
-          "name": "Block quote media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addPerson",
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "backgroundColor",
-          "name": "Background Color",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentAudio",
-        "type": "ContentType",
-        "createdAt": "2022-12-12T04:54:26.072Z",
-        "updatedAt": "2022-12-12T06:56:52.428Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 7
-      },
-      "displayField": "internalName",
-      "name": "Component: Audio",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalName",
-          "name": "Internal name",
+          "id": "id",
+          "name": "Internal Id",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -706,46 +1255,78 @@
           "name": "Type",
           "type": "Symbol",
           "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "audioUrl",
-          "name": "Audio URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "audioFile",
-          "name": "Audio File",
+          "id": "hero",
+          "name": "Profile photo",
           "type": "Link",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false,
-          "linkType": "Asset"
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "description",
+          "name": "Bio",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Job title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact",
+          "name": "Contact",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -761,7 +1342,7 @@
         "id": "addPage",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:17.829Z",
-        "updatedAt": "2022-12-02T13:53:25.186Z",
+        "updatedAt": "2022-12-19T12:40:14.143Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -769,7 +1350,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 52
+        "revision": 54
       },
       "displayField": "internalId",
       "name": "Add: Page",
@@ -780,6 +1361,15 @@
           "name": "Type",
           "type": "Symbol",
           "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
           "required": false,
           "disabled": false,
           "omitted": false
@@ -821,15 +1411,6 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
           "disabled": false,
           "omitted": false
         },
@@ -927,10 +1508,10 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "blockCards",
+        "id": "addOrganisation",
         "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:55.705Z",
-        "updatedAt": "2022-12-01T12:38:25.488Z",
+        "createdAt": "2021-09-29T07:46:41.767Z",
+        "updatedAt": "2022-12-19T12:39:56.767Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -938,167 +1519,21 @@
             "linkType": "Environment"
           }
         },
-        "revision": 20
+        "revision": 7
       },
       "displayField": "internalId",
-      "name": "Block: Cards",
+      "name": "Add: Organisation",
       "description": "",
       "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
         {
           "id": "title",
-          "name": "Title",
+          "name": "Company",
           "type": "Symbol",
           "localized": true,
           "required": false,
           "disabled": false,
           "omitted": false
         },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cards",
-          "name": "Cards",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "componentCard"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "showCardImage",
-          "name": "Show Card Image",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "slideTransition",
-          "name": "Slide transition",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cardColumns",
-          "name": "Card columns",
-          "type": "Integer",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cardRows",
-          "name": "Card rows",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "search",
-          "name": "Search",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentSearch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cardsLimit",
-          "name": "Cards Limit",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addSponsor",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:43.966Z",
-        "updatedAt": "2022-11-29T06:22:32.995Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 59
-      },
-      "displayField": "internalId",
-      "name": "Add: Sponsor",
-      "description": "",
-      "fields": [
         {
           "id": "internalId",
           "name": "Internal name",
@@ -1118,231 +1553,24 @@
           "omitted": false
         },
         {
-          "id": "organisation",
-          "name": "Organisation",
-          "type": "Link",
+          "id": "brands",
+          "name": "Brands",
+          "type": "Array",
           "localized": false,
           "required": false,
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addOrganisation"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "logoSize",
-          "name": "Logo Size",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "sponsorLabel",
-          "name": "Authorship : Sponsor Label",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "sponsorPartnerLabel",
-          "name": "Authorship Sponsor: Partner Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "authorshipPaidPostPartnerCardLabel",
-          "name": "Authorship Paid Post: Partner Card Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "innovationPartnerCardLabel",
-          "name": "Authorship Innovation: Partner Card Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
+          "items": {
             "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
+            "validations": [
+              {
+                "linkContentType": [
+                  "addOrganisation"
+                ]
+              }
+            ],
+            "linkType": "Entry"
           }
-        },
-        "id": "componentPodcast",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:49.888Z",
-        "updatedAt": "2022-11-28T10:06:06.713Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 13
-      },
-      "displayField": "internalId",
-      "name": "Component: Podcast",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "episode",
-          "name": "Episode",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "podcastUrl",
-          "name": "Podcast URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "podcastHeight",
-          "name": "Podcast Height ",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "snippet",
-          "name": "Snippet",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "durationTime",
-          "name": "Duration Time",
-          "type": "Number",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockHero",
-        "type": "ContentType",
-        "createdAt": "2022-11-01T07:53:44.715Z",
-        "updatedAt": "2022-11-21T11:18:04.458Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 14
-      },
-      "displayField": "internalId",
-      "name": "Block: Hero",
-      "description": "",
-      "fields": [
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         },
         {
           "id": "description",
@@ -1354,17 +1582,8 @@
           "omitted": false
         },
         {
-          "id": "heroIcon",
-          "name": "Hero icon",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "heroPrimaryCard",
-          "name": "Hero Primary Card",
+          "id": "hero",
+          "name": "Logo",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -1374,259 +1593,15 @@
           "validations": [
             {
               "linkContentType": [
-                "blockCards"
+                "componentImage"
               ]
             }
           ]
         },
         {
-          "id": "heroSecondaryCard",
-          "name": "Hero Secondary Card",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heroMedia",
-          "name": "Hero media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentVideo"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentInfographic",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:57.116Z",
-        "updatedAt": "2022-11-21T05:32:07.033Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 12
-      },
-      "displayField": "internalId",
-      "name": "Component: Infographic",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
+          "id": "websiteUrl",
+          "name": "Website URL",
           "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "infographicUrl",
-          "name": "Infographic URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "infographicHeight",
-          "name": "Infographic Height",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "vevUrl",
-          "name": "Vev URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "media",
-          "name": "Media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "altText",
-          "name": "Alt Text",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentCta",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:10.949Z",
-        "updatedAt": "2022-10-06T12:39:56.977Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5
-      },
-      "displayField": "internalId",
-      "name": "Component: CTA",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "linkLabel",
-          "name": "Link label",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "linkText",
-          "name": "Link text",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "pageLink",
-          "name": "Page link",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "page"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "urlLink",
-          "name": "URL link",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "showInFooter",
-          "name": "Show in Footer",
-          "type": "Boolean",
           "localized": false,
           "required": false,
           "disabled": false,
@@ -1646,7 +1621,7 @@
         "id": "addEvent",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:46.233Z",
-        "updatedAt": "2022-10-04T13:23:36.909Z",
+        "updatedAt": "2022-12-19T12:39:30.590Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -1654,12 +1629,21 @@
             "linkType": "Environment"
           }
         },
-        "revision": 45
+        "revision": 47
       },
       "displayField": "internalId",
       "name": "Add: Event",
       "description": "",
       "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
         {
           "id": "internalId",
           "name": "Internal name",
@@ -1708,15 +1692,6 @@
             ],
             "linkType": "Entry"
           }
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         },
         {
           "id": "subtitle",
@@ -1964,6 +1939,1771 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "componentVideo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:38.551Z",
+        "updatedAt": "2022-12-19T10:00:32.724Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Component: Video",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "youtubeId",
+          "name": "YouTube ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "brightcoveId",
+          "name": "BrightCove ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "videoUrl",
+          "name": "Video URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thumbnail",
+          "name": "Thumbnail",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentPodcast",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:49.888Z",
+        "updatedAt": "2022-12-19T09:58:20.786Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14
+      },
+      "displayField": "internalId",
+      "name": "Component: Podcast",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "episode",
+          "name": "Episode",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "podcastUrl",
+          "name": "Podcast URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "podcastHeight",
+          "name": "Podcast Height ",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "snippet",
+          "name": "Snippet",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration Time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentInfographic",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:57.116Z",
+        "updatedAt": "2022-12-19T09:57:53.263Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13
+      },
+      "displayField": "internalId",
+      "name": "Component: Infographic",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infographicUrl",
+          "name": "Infographic URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infographicHeight",
+          "name": "Infographic Height",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "vevUrl",
+          "name": "Vev URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "altText",
+          "name": "Alt Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentImage",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:01.161Z",
+        "updatedAt": "2022-12-19T09:57:33.337Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 15
+      },
+      "displayField": "internalId",
+      "name": "Component: Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSeoSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "mobileImage",
+          "name": "Mobile Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "altText",
+          "name": "Alt text",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageFocus",
+          "name": "Image focus",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentDownloadable",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:04.935Z",
+        "updatedAt": "2022-12-19T09:56:54.766Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8
+      },
+      "displayField": "internalId",
+      "name": "Component: Downloadable",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "file",
+          "name": "File",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "linkText",
+          "name": "Link Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentCta",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:10.949Z",
+        "updatedAt": "2022-12-19T09:55:43.311Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Component: CTA",
+      "description": "",
+      "fields": [
+        {
+          "id": "linkText",
+          "name": "Link text",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "linkLabel",
+          "name": "Link label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pageLink",
+          "name": "Page link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "urlLink",
+          "name": "URL link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showInFooter",
+          "name": "Show in Footer",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentCard",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:36.271Z",
+        "updatedAt": "2022-12-19T08:58:18.164Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8
+      },
+      "displayField": "internalId",
+      "name": "Component: Card",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentInfographic",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerPost",
+          "name": "Partner post",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "primary",
+          "name": "Primary",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockStatement",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:23.776Z",
+        "updatedAt": "2022-12-19T08:58:08.300Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "displayField": "internalId",
+      "name": "Block: Statement",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "titleSlug",
+          "name": "Title Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta",
+                "componentDownloadable"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "imagePosition",
+          "name": "Image position",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockSpotlight",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:51.509Z",
+        "updatedAt": "2022-12-19T08:57:56.754Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "displayField": "internalId",
+      "name": "Block: Spotlight",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "featured",
+          "name": "Featured",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tabView",
+          "name": "Tab view",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockPoll",
+        "type": "ContentType",
+        "createdAt": "2022-11-09T10:28:51.243Z",
+        "updatedAt": "2022-12-19T08:57:46.791Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 12
+      },
+      "displayField": "name",
+      "name": "Block: Poll",
+      "description": "To add Poll",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pollId",
+          "name": "Poll ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockHero",
+        "type": "ContentType",
+        "createdAt": "2022-11-01T07:53:44.715Z",
+        "updatedAt": "2022-12-19T08:57:27.837Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 16
+      },
+      "displayField": "internalId",
+      "name": "Block: Hero",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroIcon",
+          "name": "Hero icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroPrimaryCard",
+          "name": "Hero Primary Card",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroSecondaryCard",
+          "name": "Hero Secondary Card",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroMedia",
+          "name": "Hero media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockCards",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:55.705Z",
+        "updatedAt": "2022-12-19T07:01:35.276Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 21
+      },
+      "displayField": "internalId",
+      "name": "Block: Cards",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cards",
+          "name": "Cards",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "componentCard"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "showCardImage",
+          "name": "Show Card Image",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slideTransition",
+          "name": "Slide transition",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardColumns",
+          "name": "Card columns",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardRows",
+          "name": "Card rows",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentSearch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cardsLimit",
+          "name": "Cards Limit",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addTegBusiness",
+        "type": "ContentType",
+        "createdAt": "2022-08-10T12:47:37.362Z",
+        "updatedAt": "2022-12-19T06:59:51.560Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14
+      },
+      "displayField": "title",
+      "name": "Add: TEG Business",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLabel",
+          "name": "Business Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "blockParagraph",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:48.492Z",
+        "updatedAt": "2022-12-15T09:18:49.927Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 11
+      },
+      "displayField": "internalName",
+      "name": "Block: Paragraph",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "titleSlug",
+          "name": "Title Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publicationIndex",
+          "name": "Publication index",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "visibleLines",
+          "name": "Visible lines",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "paragraph",
+          "name": "Paragraph",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentAudio",
+                "componentImage",
+                "componentInfographic",
+                "componentPodcast",
+                "componentVideo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mediaFullWidth",
+          "name": "Media full width",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockQuote",
+          "name": "Block quote",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "blockQuoteMedia",
+          "name": "Block quote media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addPerson",
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "backgroundColor",
+          "name": "Background Color",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "componentAudio",
+        "type": "ContentType",
+        "createdAt": "2022-12-12T04:54:26.072Z",
+        "updatedAt": "2022-12-12T06:56:52.428Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7
+      },
+      "displayField": "internalName",
+      "name": "Component: Audio",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "audioUrl",
+          "name": "Audio URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "audioFile",
+          "name": "Audio File",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
+        "id": "addSponsor",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:43.966Z",
+        "updatedAt": "2022-11-29T06:22:32.995Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 59
+      },
+      "displayField": "internalId",
+      "name": "Add: Sponsor",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "id",
+          "name": "Internal Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "logoSize",
+          "name": "Logo Size",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorLabel",
+          "name": "Authorship : Sponsor Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsorPartnerLabel",
+          "name": "Authorship Sponsor: Partner Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "authorshipPaidPostPartnerCardLabel",
+          "name": "Authorship Paid Post: Partner Card Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "innovationPartnerCardLabel",
+          "name": "Authorship Innovation: Partner Card Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "layoutSection",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:32.000Z",
@@ -2022,147 +3762,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteConfig",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:40.870Z",
-        "updatedAt": "2022-09-16T06:34:24.372Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3
-      },
-      "displayField": "internalId",
-      "name": "Site: Config",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteTenant"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "siteTitle",
-          "name": "Site title",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "averageWords",
-          "name": "Average words",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "header",
-          "name": "Header",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteHeader"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "footer",
-          "name": "Footer",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteFooter"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "labels",
-          "name": "Labels",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteReference"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "themeRef",
-          "name": "ThemeRef",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "gtmId",
-          "name": "GTM ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
@@ -2240,296 +3839,6 @@
             "type": "Symbol",
             "validations": []
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteHeader",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:34.853Z",
-        "updatedAt": "2022-09-05T06:25:04.923Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 2
-      },
-      "displayField": "internalId",
-      "name": "Site: Header",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "logo",
-          "name": "Logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerLogo",
-          "name": "Partner logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "menu",
-          "name": "Menu",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "siteMenu"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "search",
-          "name": "Search",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "userAccount",
-          "name": "User account",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "newsletterLink",
-          "name": "Newsletter Link",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addTegBusiness",
-        "type": "ContentType",
-        "createdAt": "2022-08-10T12:47:37.362Z",
-        "updatedAt": "2022-08-22T11:36:12.525Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 13
-      },
-      "displayField": "title",
-      "name": "Add: TEG Business",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalName",
-          "name": "Internal Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "organisation",
-          "name": "Organisation",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addOrganisation"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerLabel",
-          "name": "Business Label",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentDownloadable",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:04.935Z",
-        "updatedAt": "2022-08-16T08:19:57.578Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 7
-      },
-      "displayField": "internalId",
-      "name": "Component: Downloadable",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "file",
-          "name": "File",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "linkText",
-          "name": "Link Text",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
@@ -3016,125 +4325,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "componentImage",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:01.161Z",
-        "updatedAt": "2022-07-05T09:50:30.595Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 14
-      },
-      "displayField": "internalId",
-      "name": "Component: Image",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSeoSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "image",
-          "name": "Image",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "mobileImage",
-          "name": "Mobile Image",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "altText",
-          "name": "Alt text",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "imageFocus",
-          "name": "Image focus",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cta",
-          "name": "CTA",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "siteClassificationPage",
         "type": "ContentType",
         "createdAt": "2021-10-04T04:56:22.904Z",
@@ -3197,132 +4387,6 @@
             "type": "Symbol",
             "validations": []
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentVideo",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:38.551Z",
-        "updatedAt": "2022-06-20T09:08:02.160Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 2
-      },
-      "displayField": "internalId",
-      "name": "Component: Video",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "youtubeId",
-          "name": "YouTube ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "brightcoveId",
-          "name": "BrightCove ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "videoUrl",
-          "name": "Video URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "thumbnail",
-          "name": "Thumbnail",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "durationTime",
-          "name": "Duration time",
-          "type": "Number",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
@@ -3557,587 +4621,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "blockStatement",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:23.776Z",
-        "updatedAt": "2021-12-14T14:09:26.580Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3
-      },
-      "displayField": "internalId",
-      "name": "Block: Statement",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "titleSlug",
-          "name": "Title Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cta",
-          "name": "CTA",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta",
-                "componentDownloadable"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "image",
-          "name": "Image",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "imagePosition",
-          "name": "Image position",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteMenu",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:15.503Z",
-        "updatedAt": "2021-12-14T10:15:33.710Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5
-      },
-      "displayField": "internalId",
-      "name": "Site: Menu",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "menuText",
-          "name": "Menu text",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "menuLink",
-          "name": "Menu link",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "menuItems",
-          "name": "Menu items",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCards",
-                  "blockCtas",
-                  "siteMenu"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addPerson",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:43.119Z",
-        "updatedAt": "2021-12-08T09:32:37.251Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 6
-      },
-      "displayField": "internalId",
-      "name": "Add: Person",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "id",
-          "name": "Internal Id",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "hero",
-          "name": "Profile photo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "description",
-          "name": "Bio",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Job title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "organisation",
-          "name": "Organisation",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addOrganisation"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "contact",
-          "name": "Contact",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCtas"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addOrganisation",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:41.767Z",
-        "updatedAt": "2021-12-08T09:31:32.970Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5
-      },
-      "displayField": "internalId",
-      "name": "Add: Organisation",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "id",
-          "name": "Internal Id",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Company",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "brands",
-          "name": "Brands",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "addOrganisation"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "hero",
-          "name": "Logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "websiteUrl",
-          "name": "Website URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentCard",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:36.271Z",
-        "updatedAt": "2021-11-29T07:47:44.812Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 6
-      },
-      "displayField": "internalId",
-      "name": "Component: Card",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "media",
-          "name": "Media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentInfographic",
-                "componentVideo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerPost",
-          "name": "Partner post",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "primary",
-          "name": "Primary",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cta",
-          "name": "CTA",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "seo",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:32:15.266Z",
@@ -4281,286 +4764,6 @@
             "id": "bxxzjfpinfqw"
           }
         },
-        "id": "siteBanner",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:22.370Z",
-        "updatedAt": "2021-09-29T07:47:22.370Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Site: Banner",
-      "description": "",
-      "fields": [
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteTenant"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "startDatetime",
-          "name": "Start date/time",
-          "type": "Date",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "endDatetime",
-          "name": "End date/time",
-          "type": "Date",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cta",
-          "name": "CTA",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "bannerPosition",
-          "name": "Banner position",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteGtm",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:20.731Z",
-        "updatedAt": "2021-09-29T07:47:20.731Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Site: GTM",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "siteTenant"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "entities",
-          "name": "Entities",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Reading Time"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "gtmTag",
-          "name": "GTM tag",
-          "type": "Text",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockForm",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:05.827Z",
-        "updatedAt": "2021-09-29T07:47:05.827Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "title",
-      "name": "Block: Form",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "htmlForm",
-          "name": "HTML form (No Comment Tags Allowed)",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
         "id": "siteFooter",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:58.571Z",
@@ -4683,209 +4886,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockCtas",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:54.295Z",
-        "updatedAt": "2021-09-29T07:46:54.295Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Block: CTAs",
-      "description": "",
-      "fields": [
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "cta",
-          "name": "CTA",
-          "type": "Array",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "componentCta"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "linksCount",
-          "name": "Links count",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockSpotlight",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:51.509Z",
-        "updatedAt": "2021-09-29T07:46:51.509Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Block: Spotlight",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "RichText",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "featured",
-          "name": "Featured",
-          "type": "Link",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "tabView",
-          "name": "Tab view",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCards"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
         }
       ]
     }
