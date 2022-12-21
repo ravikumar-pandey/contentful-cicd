@@ -15,6 +15,92 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "seo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.266Z",
+        "updatedAt": "2022-12-21T11:56:06.846Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "name",
+      "name": "Compose: SEO",
+      "description": "SEO Metadata for web pages in Compose. DO NOT DELETE",
+      "fields": [
+        {
+          "id": "title",
+          "name": "SEO title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywords",
+          "name": "Keywords",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "no_index",
+          "name": "Hide page from search engines (noindex)",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "no_follow",
+          "name": "Exclude links from search rankings? (nofollow)",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "page",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:32:15.158Z",
@@ -1196,92 +1282,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "seo",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T06:32:15.266Z",
-        "updatedAt": "2022-12-21T06:50:56.308Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3
-      },
-      "displayField": "name",
-      "name": "Compose: SEO",
-      "description": "SEO Metadata for web pages in Compose. DO NOT DELETE",
-      "fields": [
-        {
-          "id": "title",
-          "name": "SEO title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "keywords",
-          "name": "Keywords",
-          "type": "Array",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": []
-          }
-        },
-        {
-          "id": "no_index",
-          "name": "Hide page from search engines (noindex)",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "no_follow",
-          "name": "Exclude links from search rankings? (nofollow)",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
