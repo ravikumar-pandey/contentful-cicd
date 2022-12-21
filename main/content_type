@@ -15,6 +15,85 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "pageTemplateDefault",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:35:33.469Z",
+        "updatedAt": "2022-12-21T12:02:32.719Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9
+      },
+      "displayField": "name",
+      "name": "Template: Default",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "main",
+          "name": "Main",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addEvent",
+                "addOrganisation",
+                "addPage",
+                "addPerson",
+                "addPublication",
+                "addSponsor"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sections",
+          "name": "Sections",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "layoutSection"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "seo",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:32:15.266Z",
@@ -539,85 +618,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "pageTemplateDefault",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T06:35:33.469Z",
-        "updatedAt": "2022-12-21T06:58:26.342Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 8
-      },
-      "displayField": "name",
-      "name": "Template: Default",
-      "description": "",
-      "fields": [
-        {
-          "id": "name",
-          "name": "Internal Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "main",
-          "name": "Main",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addEvent",
-                "addOrganisation",
-                "addPage",
-                "addPerson",
-                "addPublication",
-                "addSponsor"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sections",
-          "name": "Sections",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "layoutSection"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
         }
       ]
     },
