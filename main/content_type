@@ -15,6 +15,140 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "siteFooter",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:58.571Z",
+        "updatedAt": "2022-12-21T06:56:29.705Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "displayField": "internalId",
+      "name": "Site: Footer",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLogo",
+          "name": "Partner logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "siteLinks",
+          "name": "Site links",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCtas"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "otherLinks",
+          "name": "Other links",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "socialMediaLinks",
+          "name": "Social media links",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCtas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "statutory",
+          "name": "Statutory",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "siteClassificationSustainability",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:39.487Z",
@@ -4752,140 +4886,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteFooter",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:58.571Z",
-        "updatedAt": "2021-09-29T07:46:58.571Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1
-      },
-      "displayField": "internalId",
-      "name": "Site: Footer",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "logo",
-          "name": "Logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerLogo",
-          "name": "Partner logo",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "siteLinks",
-          "name": "Site links",
-          "type": "Array",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCtas"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        },
-        {
-          "id": "otherLinks",
-          "name": "Other links",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCtas"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "socialMediaLinks",
-          "name": "Social media links",
-          "type": "Link",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCtas"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "statutory",
-          "name": "Statutory",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     }
