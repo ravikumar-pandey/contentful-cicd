@@ -15,6 +15,78 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "addTegBusiness",
+        "type": "ContentType",
+        "createdAt": "2022-08-10T12:47:37.362Z",
+        "updatedAt": "2022-12-21T11:48:23.051Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 15
+      },
+      "displayField": "title",
+      "name": "Add: TEG Business",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "organisation",
+          "name": "Organisation",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "addOrganisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "partnerLabel",
+          "name": "Business Label",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "pageTemplateDefault",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:35:33.469Z",
@@ -4265,78 +4337,6 @@
           "id": "cardsLimit",
           "name": "Cards Limit",
           "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "addTegBusiness",
-        "type": "ContentType",
-        "createdAt": "2022-08-10T12:47:37.362Z",
-        "updatedAt": "2022-12-19T06:59:51.560Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 14
-      },
-      "displayField": "title",
-      "name": "Add: TEG Business",
-      "description": "",
-      "fields": [
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalName",
-          "name": "Internal Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "organisation",
-          "name": "Organisation",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "addOrganisation"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "partnerLabel",
-          "name": "Business Label",
-          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
