@@ -15,6 +15,165 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "componentSearch",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:00.244Z",
+        "updatedAt": "2022-12-21T06:44:49.447Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 24
+      },
+      "displayField": "internalId",
+      "name": "Component: Search",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "searchQuery",
+          "name": "Search query",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "searchLimit",
+          "name": "Search limit",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywordSearch",
+          "name": "Keyword search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "keywordValue",
+          "name": "Keyword value",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tagSearch",
+          "name": "Tag search",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sortOption",
+          "name": "Sort option",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "filterOption",
+          "name": "Filter option",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "filterValues",
+          "name": "Filter values",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "SearchSort: Latest",
+                  "SearchSort: Popular",
+                  "SearchSort: Level",
+                  "SearchSort: A-Z"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "pageLink",
+          "name": "Page link",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentCta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "queryContentType",
+          "name": "Query Content type",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Add Publication",
+                  "Add Events"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "componentInfographic",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:57.116Z",
@@ -4015,165 +4174,6 @@
                   "Lever: Governance",
                   "Lever: Finance",
                   "Lever: Innovation"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentSearch",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:00.244Z",
-        "updatedAt": "2022-07-18T11:58:38.228Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 23
-      },
-      "displayField": "internalId",
-      "name": "Component: Search",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "searchQuery",
-          "name": "Search query",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "searchLimit",
-          "name": "Search limit",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "keywordSearch",
-          "name": "Keyword search",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "keywordValue",
-          "name": "Keyword value",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "tagSearch",
-          "name": "Tag search",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "sortOption",
-          "name": "Sort option",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "filterOption",
-          "name": "Filter option",
-          "type": "Boolean",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "filterValues",
-          "name": "Filter values",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "SearchSort: Latest",
-                  "SearchSort: Popular",
-                  "SearchSort: Level",
-                  "SearchSort: A-Z"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "pageLink",
-          "name": "Page link",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentCta"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "queryContentType",
-          "name": "Query Content type",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Add Publication",
-                  "Add Events"
                 ]
               }
             ]
