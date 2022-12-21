@@ -15,6 +15,76 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "layoutSection",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:47:32.000Z",
+        "updatedAt": "2022-12-21T06:53:13.679Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 11
+      },
+      "displayField": "internalId",
+      "name": "Layout: Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundColour",
+          "name": "Background Colour",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "component",
+          "name": "Component",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "blockCards",
+                  "blockForm",
+                  "blockParagraph",
+                  "blockSpotlight",
+                  "blockStatement"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "seo",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:32:15.266Z",
@@ -3937,76 +4007,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "layoutSection",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:47:32.000Z",
-        "updatedAt": "2022-09-23T04:37:12.993Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 10
-      },
-      "displayField": "internalId",
-      "name": "Layout: Section",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "backgroundColour",
-          "name": "Background Colour",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "component",
-          "name": "Component",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "blockCards",
-                  "blockForm",
-                  "blockParagraph",
-                  "blockSpotlight",
-                  "blockStatement"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
         }
       ]
     },
