@@ -15,6 +15,79 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "blockPoll",
+        "type": "ContentType",
+        "createdAt": "2022-11-09T10:28:51.243Z",
+        "updatedAt": "2022-12-21T12:07:42.764Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13
+      },
+      "displayField": "name",
+      "name": "Block: Poll",
+      "description": "To add Poll",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pollId",
+          "name": "Poll ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "pageTemplateDefault",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:35:33.469Z",
@@ -4134,79 +4207,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockPoll",
-        "type": "ContentType",
-        "createdAt": "2022-11-09T10:28:51.243Z",
-        "updatedAt": "2022-12-19T08:57:46.791Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 12
-      },
-      "displayField": "name",
-      "name": "Block: Poll",
-      "description": "To add Poll",
-      "fields": [
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalName",
-          "name": "Internal Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "pollId",
-          "name": "Poll ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
         }
       ]
     },
