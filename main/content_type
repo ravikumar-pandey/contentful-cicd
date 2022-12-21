@@ -15,6 +15,114 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "siteClassificationOcean",
+        "type": "ContentType",
+        "createdAt": "2022-05-30T07:53:09.606Z",
+        "updatedAt": "2022-12-21T06:54:42.619Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationOcean",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Ocean"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "primaryPillar",
+          "name": "PrimaryPillar",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "secondaryPillar",
+          "name": "Secondary Pillar",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Pillar: Sustainable Ocean Economy",
+                  "Pillar: Ocean & Climate",
+                  "Pillar: Biodiversity, Ecosystems & Resources",
+                  "Pillar: Ocean Health"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Lever: Governance",
+                  "Lever: Finance",
+                  "Lever: Innovation"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "siteBluePeaceClassification",
         "type": "ContentType",
         "createdAt": "2022-01-26T17:39:19.784Z",
@@ -4212,114 +4320,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteClassificationOcean",
-        "type": "ContentType",
-        "createdAt": "2022-05-30T07:53:09.606Z",
-        "updatedAt": "2022-07-28T05:43:41.793Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationOcean",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Ocean"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "primaryPillar",
-          "name": "PrimaryPillar",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "secondaryPillar",
-          "name": "Secondary Pillar",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Pillar: Sustainable Ocean Economy",
-                  "Pillar: Ocean & Climate",
-                  "Pillar: Biodiversity, Ecosystems & Resources",
-                  "Pillar: Ocean Health"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "lever",
-          "name": "Lever",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Lever: Governance",
-                  "Lever: Finance",
-                  "Lever: Innovation"
-                ]
-              }
-            ]
-          }
         }
       ]
     },
