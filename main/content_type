@@ -15,6 +15,103 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T06:32:15.158Z",
+        "updatedAt": "2022-12-21T11:55:25.051Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10
+      },
+      "displayField": "name",
+      "name": "Compose: Page",
+      "description": "Represents a web page in Compose. DO NOT DELETE",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Page title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "seo",
+          "name": "SEO metadata",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "seo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "templateArticle",
+                "pageTemplateArticle",
+                "pageTemplateLandingPage",
+                "pageArticleWithoutPublication",
+                "pageWorldTunaDay",
+                "pageTemplePublication",
+                "pageTemplateDefault",
+                "pageGetstarted",
+                "pageTemplateDefault"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "componentVideo",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:38.551Z",
@@ -2040,103 +2137,6 @@
           "required": false,
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "page",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T06:32:15.158Z",
-        "updatedAt": "2022-12-19T12:47:38.237Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 9
-      },
-      "displayField": "name",
-      "name": "Compose: Page",
-      "description": "Represents a web page in Compose. DO NOT DELETE",
-      "fields": [
-        {
-          "id": "title",
-          "name": "Page title",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "name",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "slug",
-          "name": "Slug",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "seo",
-          "name": "SEO metadata",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "seo"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "content",
-          "name": "Content",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "templateArticle",
-                "pageTemplateArticle",
-                "pageTemplateLandingPage",
-                "pageArticleWithoutPublication",
-                "pageWorldTunaDay",
-                "pageTemplePublication",
-                "pageTemplateDefault",
-                "pageGetstarted",
-                "pageTemplateDefault"
-              ]
-            }
-          ]
         }
       ]
     },
