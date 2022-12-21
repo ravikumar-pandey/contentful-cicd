@@ -15,6 +15,80 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "siteClassificationPage",
+        "type": "ContentType",
+        "createdAt": "2021-10-04T04:56:22.904Z",
+        "updatedAt": "2022-12-21T06:54:53.044Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 270
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationPage",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: Sustainability",
+                  "Initiative: Healthcare",
+                  "Initiative: Podiumtest",
+                  "Initiative: World Ocean",
+                  "Initiative: React",
+                  "Initiative: Ocean"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "campaign",
+          "name": "Campaign",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "siteClassificationOcean",
         "type": "ContentType",
         "createdAt": "2022-05-30T07:53:09.606Z",
@@ -4398,80 +4472,6 @@
               }
             ],
             "linkType": "Entry"
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteClassificationPage",
-        "type": "ContentType",
-        "createdAt": "2021-10-04T04:56:22.904Z",
-        "updatedAt": "2022-06-27T18:43:53.843Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 269
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationPage",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: Sustainability",
-                  "Initiative: Healthcare",
-                  "Initiative: Podiumtest",
-                  "Initiative: World Ocean",
-                  "Initiative: React",
-                  "Initiative: Ocean"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "campaign",
-          "name": "Campaign",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": []
           }
         }
       ]
