@@ -18,7 +18,7 @@
         "id": "componentInfographic",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:57.116Z",
-        "updatedAt": "2022-12-21T05:44:48.505Z",
+        "updatedAt": "2022-12-21T05:47:45.621Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,7 +26,7 @@
             "linkType": "Environment"
           }
         },
-        "revision": 14
+        "revision": 15
       },
       "displayField": "internalId",
       "name": "Component: Infographic",
