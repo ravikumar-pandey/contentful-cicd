@@ -15,6 +15,62 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "siteBluePeaceClassification",
+        "type": "ContentType",
+        "createdAt": "2022-01-26T17:39:19.784Z",
+        "updatedAt": "2022-12-21T06:54:29.559Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6
+      },
+      "displayField": "internalId",
+      "name": "Site: ClassificationBluePeace",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Initiative: BluePeace"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "layoutSection",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:32.000Z",
@@ -4260,62 +4316,6 @@
                   "Lever: Governance",
                   "Lever: Finance",
                   "Lever: Innovation"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "siteBluePeaceClassification",
-        "type": "ContentType",
-        "createdAt": "2022-01-26T17:39:19.784Z",
-        "updatedAt": "2022-07-13T02:22:53.178Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5
-      },
-      "displayField": "internalId",
-      "name": "Site: ClassificationBluePeace",
-      "description": "",
-      "fields": [
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "initiative",
-          "name": "Initiative",
-          "type": "Array",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-              {
-                "in": [
-                  "Initiative: BluePeace"
                 ]
               }
             ]
