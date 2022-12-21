@@ -15,6 +15,125 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "componentInfographic",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:57.116Z",
+        "updatedAt": "2022-12-21T05:44:48.505Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14
+      },
+      "displayField": "internalId",
+      "name": "Component: Infographic",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infographicUrl",
+          "name": "Infographic URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infographicHeight",
+          "name": "Infographic Height",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "vevUrl",
+          "name": "Vev URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "media",
+          "name": "Media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "altText",
+          "name": "Alt Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "siteMenu",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:47:15.503Z",
@@ -2150,125 +2269,6 @@
           "id": "durationTime",
           "name": "Duration Time",
           "type": "Number",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentInfographic",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:57.116Z",
-        "updatedAt": "2022-12-19T09:57:53.263Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 13
-      },
-      "displayField": "internalId",
-      "name": "Component: Infographic",
-      "description": "",
-      "fields": [
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "infographicUrl",
-          "name": "Infographic URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "infographicHeight",
-          "name": "Infographic Height",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "vevUrl",
-          "name": "Vev URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "media",
-          "name": "Media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "altText",
-          "name": "Alt Text",
-          "type": "Symbol",
           "localized": false,
           "required": false,
           "disabled": false,
