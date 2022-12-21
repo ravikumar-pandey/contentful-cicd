@@ -18,7 +18,7 @@
         "id": "blockPoll",
         "type": "ContentType",
         "createdAt": "2022-11-09T10:28:51.243Z",
-        "updatedAt": "2022-12-21T12:07:42.764Z",
+        "updatedAt": "2022-12-21T12:08:07.147Z",
         "environment": {
           "sys": {
             "id": "dev",
@@ -26,9 +26,9 @@
             "linkType": "Environment"
           }
         },
-        "revision": 13
+        "revision": 14
       },
-      "displayField": "name",
+      "displayField": "internalName",
       "name": "Block: Poll",
       "description": "To add Poll",
       "fields": [
