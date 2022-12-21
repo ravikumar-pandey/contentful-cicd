@@ -15,6 +15,132 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "componentVideo",
+        "type": "ContentType",
+        "createdAt": "2021-09-29T07:46:38.551Z",
+        "updatedAt": "2022-12-21T11:52:56.593Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "displayField": "internalId",
+      "name": "Component: Video",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "nameSlug",
+          "name": "Name slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "caption",
+          "name": "Caption",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "youtubeId",
+          "name": "YouTube ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "brightcoveId",
+          "name": "BrightCove ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "videoUrl",
+          "name": "Video URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thumbnail",
+          "name": "Thumbnail",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "durationTime",
+          "name": "Duration time",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "blockCards",
         "type": "ContentType",
         "createdAt": "2021-09-29T07:46:55.705Z",
@@ -3257,132 +3383,6 @@
           "id": "demoField",
           "name": "DemoField",
           "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "componentVideo",
-        "type": "ContentType",
-        "createdAt": "2021-09-29T07:46:38.551Z",
-        "updatedAt": "2022-12-19T10:00:32.724Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3
-      },
-      "displayField": "internalId",
-      "name": "Component: Video",
-      "description": "",
-      "fields": [
-        {
-          "id": "name",
-          "name": "Name",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "nameSlug",
-          "name": "Name slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "caption",
-          "name": "Caption",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "youtubeId",
-          "name": "YouTube ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "brightcoveId",
-          "name": "BrightCove ID",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "videoUrl",
-          "name": "Video URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "thumbnail",
-          "name": "Thumbnail",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "durationTime",
-          "name": "Duration time",
-          "type": "Number",
           "localized": false,
           "required": false,
           "disabled": false,
