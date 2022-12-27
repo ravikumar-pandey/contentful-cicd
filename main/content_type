@@ -15,6 +15,140 @@
             "id": "bxxzjfpinfqw"
           }
         },
+        "id": "blockHero",
+        "type": "ContentType",
+        "createdAt": "2022-11-01T07:53:44.715Z",
+        "updatedAt": "2022-12-26T07:30:13.324Z",
+        "environment": {
+          "sys": {
+            "id": "dev",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 17
+      },
+      "displayField": "internalId",
+      "name": "Block: Hero",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "internalId",
+          "name": "Internal name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroIcon",
+          "name": "Hero icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroPrimaryCard",
+          "name": "Hero Primary Card",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroSecondaryCard",
+          "name": "Hero Secondary Card",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "blockCards"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heroMedia",
+          "name": "Hero media",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": [
+                "componentImage",
+                "componentVideo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "bxxzjfpinfqw"
+          }
+        },
         "id": "pageTemplateDefault",
         "type": "ContentType",
         "createdAt": "2021-09-29T06:35:33.469Z",
@@ -4207,140 +4341,6 @@
             ],
             "linkType": "Entry"
           }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "bxxzjfpinfqw"
-          }
-        },
-        "id": "blockHero",
-        "type": "ContentType",
-        "createdAt": "2022-11-01T07:53:44.715Z",
-        "updatedAt": "2022-12-19T08:57:27.837Z",
-        "environment": {
-          "sys": {
-            "id": "dev",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 16
-      },
-      "displayField": "internalId",
-      "name": "Block: Hero",
-      "description": "",
-      "fields": [
-        {
-          "id": "type",
-          "name": "Type",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "internalId",
-          "name": "Internal name",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "subtitle",
-          "name": "Subtitle",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "heroIcon",
-          "name": "Hero icon",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "heroPrimaryCard",
-          "name": "Hero Primary Card",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heroSecondaryCard",
-          "name": "Hero Secondary Card",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "blockCards"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heroMedia",
-          "name": "Hero media",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry",
-          "validations": [
-            {
-              "linkContentType": [
-                "componentImage",
-                "componentVideo"
-              ]
-            }
-          ]
         }
       ]
     },
